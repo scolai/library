@@ -1,0 +1,20 @@
+# Jekyll build output
+_site/
+
+# Jekyll metadata
+.jekyll-metadata
+
+# Sass/SCSS cache
+.sass-cache/
+
+# Node modules (if you use npm/yarn for assets)
+node_modules/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
