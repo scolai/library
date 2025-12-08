@@ -1,0 +1,62 @@
+/* this uses examples of custom properties */
+	:root {
+		--brand-color: #0072b0; 
+		--column-width: 1080px; }
+
+
+/* this demonstrates resetting elements so they do not overspill their containers 
+	 margin, padding, border property widths are substracted from the element's total width */
+	*,
+	::before,
+	::after { box-sizing:border-box; }
+
+	body {
+	/* reset margin so it removes margin set by user-agent rules, allowing element edge to sit 
+		immediate to container (:root/html/screen) */
+		margin: unset;
+		background-color: #eee;
+	/* text property values are inheritable by child elements. */
+		font-family: Helvetica, Arial, sans-serif
+		 }	
+		.page-header h1 {
+			box-sizing: border-box;
+			color: #fff;
+			background-color: var(--brand-color);
+		/* examples of logical */	
+			max-inline-size: var(--column-width);
+			margin-inline: auto;
+			margin-block: 0;
+			padding-inline: 1.5rem; 
+			padding-block: 1em; }
+		.container {
+			max-width: var(--column-width);
+			margin: 0 auto; }
+		.main {
+			background-color: #fff; 
+			border-radius: 0.5em;
+			padding: 1em 1.5rem; }
+		.social-links {
+			max-inline-size: 25em;
+			background-color: #fff;
+			border-radius: 0.5em;
+			padding-inline: 1.5rem;
+			padding-block: 1em; }
+		.button-link {
+			display: block; 
+			padding: 0.5em; 
+			color: #fff;
+			background-color: var(--brand-color); 
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase; }
+		.button-link + .button-link {
+			margin-block-start: 1.5em; }
+		.sponsor-link {
+			display: block;
+			color: var(--brand-color);
+			font-weight: bold;
+			text-decoration: none; }
+		/* this demonstrated spacing elements within a list. + represents adjacent sibling.
+			therefore, all list items which are children of .stack and which are also adjacent to another 			sibling above and below itself in the list will receive the style rules. therefore, the top and bottom list items will not receive the styling rules. this approach addresses the condition 
+			rather than individual elements (eg adding a unique classes to the top and bottom list items or using pseudo-elements (ie first-child, last-child)). */
+		.stack > * + * { margin-block-start: 1.5em; }			

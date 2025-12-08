@@ -1,0 +1,23 @@
+@layer modules.cTextImageHero {
+
+.cTextImageHero {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin-inline: auto;}
+
+.cTextImageHero > * + * {
+  margin-block-start: 50px;}
+  
+.cTextImageHero__h1 {
+  font-family: var(--font-family-heading);}
+
+.cTextImageHero__h2 {
+  font-size: var(--font-size-subheading);}
+
+.cTextImageHero__media {}
+
+.cTextImageHero__img {
+  max-inline-size: 100%;
+  height: auto;}}
+

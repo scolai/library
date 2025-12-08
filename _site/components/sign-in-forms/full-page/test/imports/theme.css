@@ -1,0 +1,20 @@
+@import url("/main.css");
+@layer theme {
+	:root {
+		--light: var(--n-900);
+		--dark: var(--n-200);
+		--medium: var(--n-500);
+		--gray: var(--n-600);
+		
+		--heading: var(--font-sans);
+		--text: var(--font-serif);
+		--label: var(--font-sans);
+		
+		--label-size: var(--label);
+		--heading-size: var(--heading);
+		--subheading-size: var(--subheading); 
+	}
+	
+	body {
+		background-color: var(--light); }
+}

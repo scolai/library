@@ -1,0 +1,98 @@
+@layer modules.hn-full-rounded  {
+
+.hn-full-rounded {
+
+	.wrapper { background-color: var(--gray-blue-lightest); }
+
+
+	/* display list of items as a centered column on small screens, aligned left */
+	.nav-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		list-style-type: none;
+		width: 90%;
+		max-width: 350px;
+		margin-inline: auto;
+		padding-inline: unset; 
+		
+		/* format links as horizontal navigation tabs, spaced evenly */
+		@media screen and (min-width: 415px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);}}
+	
+	.nav-item {
+		border: 2px solid var(--gray);
+		display: flex;
+		letter-spacing: var(--tracking-lg);
+		background-color: var(--white);
+		
+		@media screen and (min-width: 415px) {
+			border: 0;}}
+	
+	.nav-item + .nav-item {
+		margin-block-start: 2px; 
+		
+		/* make top of columns flush */
+		@media screen and (min-width: 415px) {
+			margin-block-start: 0; }}
+
+	.first-item {
+	
+		@media screen and (min-width: 415px) {
+			border-left: 2px solid var(--gray);
+			border-top: 2px solid var(--gray);
+			border-bottom: 2px solid var(--gray); 
+			border-start-start-radius: var(--size-radius-full);
+			border-end-start-radius: var(--size-radius-full); }}
+	.last-item {
+		@media screen and (min-width: 415px) {
+			border-right: 2px solid var(--gray);
+			border-top: 2px solid var(--gray);
+			border-bottom: 2px solid var(--gray);	
+			border-start-end-radius: var(--size-radius-full);
+			border-end-end-radius: var(--size-radius-full); }}
+	
+	.nav-item.active-item {
+		background-color: var(--gray-lightest);
+		border: 2px solid var(--gray);}
+		
+	.nav-item.active-item a {
+		color: var(--gray-darker); }
+
+	.nav-item.active-item:hover {
+		background-color: var(--gray-lightest);}
+
+	.nav-item.active-item:hover a {
+		color: var(--gray-darker); }
+
+
+	.nav-item:hover {
+		background-color: var(--gray-lightest);
+		border-color: var(--gray); }
+		
+	.nav-item:hover a {
+		color: var(--gray); }
+	
+	/* display list items as blocks on small screens and make entire block clickable */
+	a {
+		display: block;
+		flex-grow: 1;
+		line-height: 3;
+		color: var(--gray);
+		/* bring link off left border */
+		padding-inline-start: 20px;
+	
+		/* center cell items and remove padding */
+		@media screen and (min-width: 415px) {
+			display: flex;
+			justify-content: center;			
+			padding-inline-start: unset; }}
+	
+	a:any-link {
+		text-decoration: none;
+		font-family: var(--font-family-label);
+		font-size: var(--font-size-label);}
+
+
+}

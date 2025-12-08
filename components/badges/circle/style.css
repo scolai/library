@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/badges/circle/style.css */
+@layer reset, theme, layout, modules.badge-circle.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("badge-circle.css") layer(modules.badge-circle);
+@import url("utilities.css") layer(utilities);

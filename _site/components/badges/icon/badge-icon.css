@@ -1,0 +1,68 @@
+@layer modules.badge-icon  {
+
+.badge-icon {
+
+	.wrapper {}
+
+	.badge-wrapper {
+		position: relative; }
+		
+	.badge-icon {
+		position: absolute;
+		left: 5%;
+		display: inline-block;
+		height: 1.25rem;
+		width: 1rem;
+		background-color: var(--white);
+		mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/></svg>');
+		-webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/></svg>');
+		mask-repeat: no-repeat;
+		mask-position: center;
+		mask-size: contain;
+		mask-type: alpha;
+		-webkit-mask-type: alpha;}		
+
+	.badge {
+		background-color: var(--gray-darkest);
+		color: var(--gray-lightest);
+		font-family: var(--font-family-badge);
+		font-size: var(--font-size-badge);
+		font-weight: 600;
+		padding-block: 0.5rem;
+		padding-inline: 0.75rem;
+		padding-inline-start: 1.5rem;
+		border-radius: var(--size-radius-full);
+		letter-spacing: var(--tracking-md); }
+
+@scope(.badge-icon) {
+	.badge-wrapper {
+		position: relative; }
+		
+	.badge-icon {
+		position: absolute;
+		left: 5%;
+		display: inline-block;
+		height: 1.25rem;
+		width: 1rem;
+		background-color: var(--white);
+		mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/></svg>');
+		-webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/></svg>');
+		mask-repeat: no-repeat;
+		mask-position: center;
+		mask-size: contain;
+		mask-type: alpha;
+		-webkit-mask-type: alpha;}
+
+	.badge {
+		background-color: var(--gray-darkest);
+		color: var(--gray-lightest);
+		font-family: var(--font-family-badge);
+		font-size: var(--font-size-badge);
+		font-weight: 600;
+		padding-block: 0.5rem;
+		padding-inline: 0.75rem;
+		border-radius: var(--size-radius-md);
+		letter-spacing: var(--tracking-md); }}
+
+
+}

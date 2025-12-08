@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Flex practice</title>
+
+<style>
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+	    display: block;
+    }
+    body {
+	    line-height: 1;
+    }
+    ol, ul {
+	    list-style: none;
+    }
+    blockquote, q {
+	    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+	    content: '';
+	    content: none;
+    }
+    table {
+	    border-collapse: collapse;
+	    border-spacing: 0;
+    }
+    body {
+        font-family: Arial;
+        margin: 0;  }
+        
+        
+    .page_header {
+        font-family: Arial; 
+        font-size: 178px;
+        margin-top: 0;
+        line-height: 178px; }
+    
+    ul {
+        border: 2px dashed blue;
+        height: 400px;
+        margin: 50px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style-type: none; }
+    li {
+        width: 150px;
+        text-align: center;
+        border: 2px solid black;
+        padding: 10px 5px;
+        margin: 5px 15px;
+        background: yellow; }
+    a {
+        color: #ef9c00; 
+        text-decoration: none;
+        }     
+
+        
+    /* *************************** */
+
+    /*           Buttons           */
+    
+    /* *************************** */
+    
+    #wrapper {
+
+        margin: 30px auto;
+        width: 75%; }
+    
+    .header {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; }
+    .header-flex-item-1, .header-flex-item-2, .header-flex-item-3 {
+        margin: 25px 0; 
+        font-size: 16px; }
+    .header-flex-item-1 {
+        flex-basis: 35%; }
+    .header-flex-item-2 {
+        flex-basis: 25%; }
+    .header-flex-item-3 {
+        flex-basis: 40%; }
+        
+    .row {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; }
+    .row-flex-item-1 {
+        flex-basis: 35%; }
+    .row-flex-item-2 {
+        flex-basis: 25%; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;}
+    .row-flex-item-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 40%; }
+
+    .button-default {
+        border: 2px solid blue;
+        padding: 15px 25px;
+        font-size: 18px;
+        font-family: Arial;
+        font-weight: 600; }    
+    
+    
+    
+    /* *************************** */
+
+    /*       positioning            */
+    
+    /* *************************** */
+    
+    
+    
+    #wrapper-positioning {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 33%;
+        height: 300px;
+        margin: 25px auto; }
+    .form-container {
+        padding: 10px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;}
+    #test-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%; }
+    p {
+        font-size: 26px;
+        padding: 5px 0; }
+    .text {
+        flex-basis: 75%;
+        height: 26px; 
+         }
+    .form-container input[type="button"]  {
+        flex-basis: 25%;
+        padding: 4px 15px;
+          font-weight: bold;
+          color: dodgerblue;
+          background: gold;
+          border-radius: 3px; }
+          
+     .form-container input[type="button"]::mouseover  {
+        flex-basis: 25%;
+        padding: 4px 15px;
+          font-weight: bold;
+          color: skyblue;
+          background: green;
+          border-radius: 3px; }
+            
+    
+    
+    
+    
+</style>
+</head>
+
+<body>
+    <h1 class="page_header">Flex practice</h1>
+
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">Speakers</a></li>
+        <li><a href="solutions.html">Get Tickets</a></li>
+        <li><a href="support.html">Become a Member</a></li>
+        <li><a href="contactus.html">About Us</a></li>
+    </ul>
+    </nav>
+    
+    <!-- buttons components page -->
+    <!-- using flex -->
+    
+<!-- /* *************************** */
+
+     /*           Buttons           */
+    
+     /* *************************** */
+-->     
+
+    <div id="wrapper">
+        <div class="header">  <!-- display flex  -->
+            <div class="header-flex-item-1"><h2>Description</h2></div>
+            <div class="header-flex-item-2"><h2>Primary</h2></div>
+            <div class="header-flex-item-3"><h2>Secondary</h2></div>
+        </div>
+        <div class="row">   <!-- display flex  -->
+            <div class="row-flex-item-1">
+                <h3>Style example</h3>
+            </div>
+            <div class="row-flex-item-2">
+                <a href="#">
+                    <div class="button-default">Button</div>
+                </a>
+            </div>
+            <div class="row-flex-item-3">  <!-- display flex -->
+                <a href="#">
+                    <div class="button-default">Button</div>
+                </a>
+                <a href="#">
+                    <div class="button-default">Button</div>
+                </a>
+                <a href="#">
+                    <div class="button-default">Button</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+       
+<!-- 
+    /* *************************** */
+
+    /*       positioning            */
+    
+    /* *************************** */
+-->     
+
+
+    <div id="wrapper-positioning">
+        <div class="form-container">
+            <p>Label</p>
+            <form id="test-form" action="" method="post">
+                <input type="text" class="text">
+                <a href="#">
+                    <input type="button" value="Sign Up">
+                </a>
+            </form>
+        </div>
+    </div> <!-- end of positioning wrapper -->
+
+
+
+</body>
+</html>
+
+
+

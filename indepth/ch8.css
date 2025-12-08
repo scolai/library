@@ -1,0 +1,164 @@
+/* resetting layer styles */
+/* establishes priority order for all layers */
+@layer reset, theme, base, layout, modules, utiliities;
+
+/* fixes box sizing model */
+@layer reset {
+*, 
+*::before,
+*::after { box-sizing: border-box; }
+
+/* removes body margin */
+body { margin: unset; }
+
+/* fixes font behavior for form elements */
+button, input, textarea, select { font: inherit; }
+
+/* makes sizing of images and similar objects more predictable */ 
+img, picture, svg, canvas {
+	display: block; 
+	max-inline-size: 100%;
+	height: auto ; }
+	
+@media (prefer-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important; } } } 
+
+
+/* for setting custom properties, particularly for colours. more specific than the global layer that sets defaults. */
+@layer theme {
+	:root {
+		--brand-color: #0063cc;
+		--background-color-1: #edf3fa;
+		--background-color-2: #c6cdd5;
+		--foreground-color-1: #39434d;
+		--foreground-color-2: #5a636d;
+		--font-main: "Helvetica Neue", "Nimbus Sans", Arial, sans-serif;
+		--font-heading: Georgia, sans-serif;
+	
+	/* set accent colours for website so they are uniform, for things like checkboxes, 
+		radio buttons, progress bars etc */
+	accent-color: var(--brand-color);
+	/* set theme to light or dark mode */
+	color-scheme: light; } }
+
+
+/* also called 'base layer'. for setting all default values throughout the website. 
+	most selectors are tags because they are setting defaults for html elements. */
+@layer global {
+	:root {
+		font-size: clamp(1rem, 0.4rem + 0.8svw, 1.2rem); }
+	body {
+		font-family: var(--font-main);
+		background-color: var(--background-color-1);
+		color: var(--foreground-color-2); }
+	a:any-link {
+		color: var(--brand-color); }
+	h1 {
+		font-family: var(--font-heading);
+		font-size: 2.2rem; }
+	h2 {
+		font-size: 1.125rem; }
+	@media (min-width: 768px) {
+		h1 {
+			font-size: 3rem; }
+		h2 {
+			font-size: 2rem; } } }
+			
+/* for formatting the high-level layout of the page, like positioning the header, main, aside, footer etc, define columns, grids etc. sites often have more than one layout layer, as the home page may have a different layout than the contact page. often, different levels have unique layouts which help differentiate the levels. */
+/* select which layer is applied by adding the #homepage or #article ID to the body or high-level div on the page. this allows the stylesheet to be reused across multiple pages. */			
+@layer layout {
+	#homepage {
+		display: grid;
+		grid-template-areas:
+			"header header"
+			"main sidebar"
+			"footer footer";
+		grid-template-columns: 1fr 300px;
+		gap: 1rem; }
+	
+	#homepage > header,
+	#homepage > footer {
+		grid-column: span 2; }
+	
+	#article > main {
+		max-inline-size: 1000px;
+		margin-inline: auto; } }
+		
+/* this layer is for objects/components/blocks. these include things like dropdown menus, modals, banner images, navigation bars, information cards. these styles provide most of the colours, spacing and typography rules. this layer includes the vast majority of styles. each module should have a unique name and be relatively small. they should be built in a way so they can be added anywhere on the page. */
+@layer modules {
+	.nav-menu {
+		margin-block: unset;
+		padding-inline: unset;
+		border: 1px solid #ccc;
+		list-style: none; }
+	.nav-menu > li + li {
+		border-top: 1px solid #ccc; }
+	.nav-menu > li > a {
+		display: block;
+		padding: 0.8em 1em;
+		color: inherit;
+		font-weight: normal; }
+	.nav-menu > li > a:hover {
+		color: var(--brand-color);
+		background-color: white; }
+	.card {
+		padding: 1rem;
+		border-radius: 0.5rem;
+		background-color: #fff; }
+	.card > h3 {
+		align-self: end;
+		margin-block: 0;
+		padding-block-end: 0.5rem;
+		border-block-end: 1px solid #eee; } }
+
+/* utility layers are quick helpers for one simple, specific style to an element. */
+@layer utilities {
+	.text-center {
+		text-align: center; }
+	.hidden {
+		display: none; }
+	.border-radius {
+		border-radius: 1rem; } }
+
+
+
+
+
+
+
+
+
+
+
+/* @layer global, theme;
+
+@layer global {
+	:root {
+		--brand-blue: #0063cc; }
+		
+	a:any-link {
+		color: var(--brand-blue);
+		font-weight: bold;
+		}
+	}
+	
+	@layer theme {
+		.button {
+			display: inline-block;
+			padding: 0.5rem;
+			color: white;
+			background-color: var(--brand-blue);
+			font-weight: normal;
+			text-decoration: none; }
+			
+	.blog-content a:any-link {
+		display: revert-layer;
+		padding: revert-layer;
+		color: revert-layer;
+		background-color: revert-layer;
+		font-weight: revert-layer;
+		text-decoration: revert-layer; } } */

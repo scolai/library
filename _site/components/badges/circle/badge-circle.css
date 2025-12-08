@@ -1,0 +1,16 @@
+@layer modules.badge-circle  {
+
+.badge-circle {
+
+	.wrapper {}
+
+	.badge {
+		background-color: var(--gray-lighter);
+		color: var(--gray-darkest);
+		font-family: var(--font-family-badge);
+		font-size: var(--font-size-badge);
+		font-weight: 600;
+		padding: 0.75rem;
+		clip-path: circle(0.75rem);
+		letter-spacing: var(--tracking-md); }
+}

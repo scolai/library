@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/badges/gradient/style.css */
+@layer reset, theme, layout, modules.badge-gradient.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("badge-gradient.css") layer(modules.badge-gradient);
+@import url("utilities.css") layer(utilities);

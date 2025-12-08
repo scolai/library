@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/ ... /text-aligned-right-image-right/style.css */
+@layer reset, theme, layout, modules.text-aligned-right-image-right.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("text-aligned-right-image-right.css") layer(modules.text-aligned-right-image-right);
+@import url("utilities.css") layer(utilities);

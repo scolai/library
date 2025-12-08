@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library | Profile cards</title>
+  <link rel="stylesheet" media="screen" href="library.css">
+  <link rel="stylesheet" media="screen" href="normalizer.css">
+<style>
+
+*,
+::before,
+::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+wrapper,
+item
+	{ display: block; }
+
+
+body {
+	background-color: var(--value9);
+	height: 100vh; }
+																		/* grid */
+wrapper {
+	font-family: sans-serif; 
+	width: 80vw;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	row-gap: 30px;
+	column-gap: 15px; }
+																		/* grid item height */
+wrapper > * {
+	height: 300px; }
+	
+
+item {
+	position: relative;
+	background-color: #ddd;
+	border: 2px solid #999; }
+	
+	
+h1 {
+	width: 80vw;
+	margin-inline: auto; }
+h2 { 
+	position: absolute; 
+	left: 0;
+	bottom: -30px;
+	font-size: var(--subheading); }		
+</style>
+</head>
+<body>
+	<h1>Profile cards</h1>
+	<components>
+		<item>
+		
+			<h2></h2>
+		</item>
+	</components>
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library | </title>
+  <link rel="stylesheet" media="screen" href="library.css">
+  <link rel="stylesheet" media="screen" href="normalizer.css">
+<style>
+
+*,
+::before,
+::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+	{ display: block; }
+
+
+body {
+	background-color: var(--value9);
+	height: 100vh; }
+
+components {
+	width: 80vw;
+	margin-inline: auto;
+	border-radius: 10px;
+	display: grclass;
+	grid-template-columns: repeat(1, 1fr); 
+	row-gap: 30px;
+	column-gap: 15px; }
+
+
+    body {
+        width: 100%;
+        font-family: Arial;
+        font-size: 100%;
+        font-weight: 400;
+        padding: 50px 0 0; }
+    h1 {
+        font-family: "PT Sans"; 
+        font-size: 4em;
+        font-weight: 200;
+        margin: 50px 200px;
+        line-height: 78px; }
+    h2 {
+        font-family: "PT Sans";
+        font-size: 1em;
+        font-weight: 200;
+        position: absolute;
+        left: 0;
+        bottom: -20px;   }
+    h3 {
+        padding-bottom: 10px; }
+    ul {
+        list-style-type: none; }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        position: relative; 
+        width: 90%;
+        margin: 50px auto;
+        border: 3px solid #CBD2D9;     
+        margin: 50px auto;   
+        display: flex;
+        flex-direction: row;  } 
+        
+    .footer1 {
+        display: flex;
+        flex-direction: column; 
+        position: relative; 
+        width: 90%;
+        margin: 50px auto;
+        padding: 35px 50px;
+        border: 3px solid #CBD2D9;  }
+    .section-one1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 100px; }
+    .sitemap1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-basis: 70%;         }
+    .sitemap1 ul { 
+        flex-basis: 20%; }
+    .about1 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;          }  
+    .about1 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;         }   
+    .about1 li {
+        padding: 10px 15px; }   
+    .section-two1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        padding-top: 25px;
+        border-top: 1px solid #CBD2D9;  }      
+    .section-two1 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+    .section-two1 li {
+        padding-left: 45px; }
+        
+
+/********************************* **************************************/        
+
+    .footer2 {
+        display: flex;
+        flex-direction: column; 
+        position: relative; 
+        width: 90%;
+        margin: 50px auto;
+        padding: 35px 50px;
+        border: 3px solid #CBD2D9;  }
+    .section-one2 {
+        display: flex;
+        flex-direction: row; 
+        padding-bottom: 100px;         }
+    .sitemap2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-basis: 70%;         }
+    .sitemap2 ul {
+        flex-basis: 25%; }
+    .about2 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;          }  
+    .about2 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;         }   
+    .about2 li {
+        padding: 10px 5px; }   
+    .about2 form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        list-style: none;        
+        width: 65%;   }
+    .about2 form {
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        list-style: none;        
+        width: 100%; }        
+    .about2 input[type=text] {
+        border-right: none; 
+        width: 100%;    }
+    .about2 input[type=button]  {
+        border-radius: 0 5px 5px 0;
+        background: #CBD2D9; }          
+    .section-two2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        padding-top: 25px;
+        border-top: 1px solid #CBD2D9;  }      
+    .section-two2 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+    .section-two2 li {
+        padding-left: 45px; }
+        
+        
+/*******************************************************************************************/        
+
+    .footer3 {
+        display: flex;
+        flex-direction: column; 
+        position: relative; 
+        width: 90%;
+        margin: 50px auto;
+        padding: 35px 50px;
+        border: 3px solid #CBD2D9;  }
+    .section-one3 {
+        display: flex;
+        flex-direction: row; 
+        padding-bottom: 100px;         }
+    .about3 {
+        flex-basis: 30%;          }            
+    .sitemap3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-basis: 70%;         }
+    .sitemap3 ul {
+        flex-basis: 24%; }
+
+    .section-two3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        padding-top: 25px;
+        border-top: 1px solid #CBD2D9;  }      
+    .section-two3 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+    .section-two3 li {
+        padding-left: 45px; }
+        
+        
+/************************************************ ******************************************/        
+
+    .footer4 {
+        display: flex;
+        flex-direction: column; 
+        position: relative; 
+        width: 90%;
+        margin: 50px auto;
+        padding: 35px;
+        border: 3px solid #CBD2D9;  }
+    .section-one4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        padding-bottom: 50px       }            
+    .sitemap4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; }
+    .sitemap4 ul {
+        flex-basis: 25%;
+        padding-right: 20px;
+         }
+
+    .section-two4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        padding: 25px; }      
+    .section-two4 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+    .section-two4 li {
+        margin-right: 35px;  }
+
+    .section-three4 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        padding: 25px; }
+        
+    .section-three4 li {
+        margin-right: 45px; }        
+                
+
+
+/************************************************ ******************************************/        
+
+    .footer5 {
+        display: flex;
+        flex-direction: column; 
+        position: relative; 
+        width: 90%;
+        margin: 50px auto;
+        padding: 35px 50px;
+        border: 3px solid #CBD2D9;  }
+    .section-one5 {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        padding-bottom: 50px;         }
+    .section-two5 ul {
+        flex-basis: 25%; }
+    .section-one5 form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        list-style: none;        
+        width: 65%;   }
+    .section-one5 form {
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        list-style: none;        
+        width: 100%; }        
+    .section-one5 input[type=text] {
+        border-right: none; 
+        width: 100%;    }
+    .section-one5 input[type=button]  {
+        border-radius: 0 5px 5px 0;
+        background: #CBD2D9; }          
+    .section-two5 {
+        }
+    .section-three5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        padding-top: 25px;
+        border-top: 1px solid #CBD2D9;  }      
+    .section-three5 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+    .section-three5 li {
+        padding-left: 45px; }
+        
+
+</style>
+</head>
+<body>
+<components>
+    <h1>Footers</h1>
+    
+    <footer class="footer1">          <!-- new row -->
+        <div class="section-one1">
+            <div class="sitemap1">  <!-- flex item start  -->
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                                    
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>do eiusmod tempor incclassclassunt ut </a></li>
+                    <li><a>do eiusmod tempor ut </a></li>
+                    <li><a>do eiusmod tempor incclassclassunt ut </a></li>                                         
+                    <li><a>do eiusmod tempor  </a></li>                                         
+                    <li><a>do eiusmod tempor incclassclassunt ut </a></li>                                         
+                </ul>
+            </div>
+            <div class="about1">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                <ul >
+                    <li><a><img>img</a></li>
+                    <li><a><img>img</a></li>
+                    <li><a><img>img</a></li>
+                    <li><a><img>img</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-two1">
+                <p>exercitation legalese laboris nisi exercitation legalese laboris nisi ut ut</p>
+                <ul>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                </ul>                                        
+        </div> 
+
+        <h2>Site map / About section / Social media icons / Legal</h2>
+    </footer>          <!-- end of row -->
+    
+    
+    
+    
+    
+    
+    
+    <footer class="footer2">          <!-- new row -->
+        <div class="section-one2">
+            <div class="sitemap2">  <!-- flex item start  -->
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                                    
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+            </div>
+            <div class="about2">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                <form>
+                    <input type="text"class="label-attached">
+                    <input type="button" class="background-dark small-rounded-no-left-border" value="Sign Up">
+            </form>    
+            </div>
+        </div>
+        <div class="section-two2">
+                <p>exercitation legalese laboris nisi exercitation legalese laboris nisi ut ut</p>
+                <ul>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                </ul>                                        
+        </div> 
+
+        <h2>Site map / About section / Newsletter sign up / Legal</h2>
+    </footer>          <!-- end of row -->
+
+    
+
+
+
+
+
+    <footer class="footer3">          <!-- new row -->
+        <div class="section-one3">
+            <div class="about3">
+                <img>LOGO
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            </div>
+            <div class="sitemap3">  <!-- flex item start  -->
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                                    
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>do eiusmod tempor incclassclassunt ut </a></li>
+                    <li><a>do eiusmod tempor ut </a></li>
+                    <li><a>do eiusmod tempor incclassclassunt ut </a></li>                                         
+                    <li><a>do eiusmod tempor  </a></li>                                         
+                    <li><a>do eiusmod tempor incclassclassunt ut </a></li>                                       
+                </ul>
+            </div>
+        </div>
+        <div class="section-two3">
+                <p>exercitation legalese laboris nisi exercitation legalese laboris nisi ut ut</p>
+                <ul>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                </ul>                                        
+        </div> 
+
+        <h2>Company logo / About section / Site map / Legal</h2>
+    </footer>          <!-- end of row -->
+    
+
+
+
+
+
+
+
+    <footer class="footer4">          <!-- new row -->
+        <div class="section-one4">
+            <div class="sitemap4">  <!-- flex item start  -->
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                                    
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link </a></li>
+                    <li><a>a page link </a></li>
+                    <li><a>a page link </a></li>                                         
+                    <li><a>a page link  </a></li>                                         
+                    <li><a>a page link </a></li>                                       
+                </ul>
+            </div>
+        </div>
+        <div class="section-two4">
+            <ul>
+                <li>img</li>
+                <li>img</li>
+                <li>img</li>
+                <li>img</li>                                
+            </ul>
+        </div>
+        <div class="section-three4">
+                <ul>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                </ul>                                        
+        </div> 
+        <h2>Centered site map with social icons and legal</h2>
+    </footer>          <!-- end of row -->
+
+
+    <footer class="footer5">          <!-- new row -->
+        <div class="section-one5">
+                <ul>
+                    <li><img>LOGO</li>
+                    <li><p>company name</p></li>
+                </ul>
+                <form> 
+                    <input type="text"class="label-attached">
+                    <input type="button" class="background-dark small-rounded-no-left-border" value="Sign Up">
+                  </form>                    
+            <div class="section-two5">  <!-- flex item start  -->
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                                    
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><h3>Site Map</h3></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+            </div>
+        </div>
+        <div class="section-three5">
+                <p>exercitation legalese laboris nisi exercitation legalese laboris nisi ut ut</p>
+                <ul>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                </ul>                                        
+        </div> 
+        <h2>Company logo and newsletter sign up on top / Site map / Legal</h2>
+    </footer>          <!-- end of row -->
+
+
+    <footer class="footer1">          <!-- new row -->
+        <div class="flex-item-one">  <!-- flex item start  -->
+                <ul>
+                    <li>logo</li>
+                </ul>        
+                <ul>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>                                         
+                    <li><a>a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                </ul>                                                      
+        </div>
+        <div class="flex-item-two">
+                <ul>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                    <li><a>a page link</a></li>
+                </ul>                                        
+
+        </div> 
+
+        <h2>Company logo / Navigation / Social icons / legal</h2>
+    </footer>          <!-- end of row -->
+
+
+
+    <footer class="footer1">          <!-- new row -->
+        <div class="flex-item-one">  <!-- flex item start  -->
+            <p></p>                
+            <ul>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>
+                <li><a>a page link</a></li>                                         
+                <li><a>a page link</a></li>                                         
+            </ul>             
+        </div>
+        <h2>Legal / Stacked navigation</h2>
+    </footer>          <!-- end of row -->
+</components>
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library | </title>
+  <link rel="stylesheet" media="screen" href="library.css">
+  <link rel="stylesheet" media="screen" href="normalizer.css">
+<style>
+
+*,
+::before,
+::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+	{ display: block; }
+
+
+body {
+	background-color: var(--value9);
+	height: 100vh; }
+
+
+component-wrapper,
+captcha { display: block; }
+
+newsletter-signup-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 		
+	position: relative;
+	max-width: 400px;
+	padding-block: 20px;
+	padding-inline: 30px;
+	border: 1px solid #999; }
+	
+newsletter-signup-form > * + * {
+	margin-block-start: 30px; }
+	
+.newsletter-logo {
+	position: absolute;
+	top: -50px;
+	right: -50px; 
+	max-width: 100px;
+	height: auto; }
+
+header h1 {
+	width: 75%; }
+header p {
+	font-size: 1.125rem;
+	line-height: 1.5rem;}
+
+
+info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; }
+info > * + * {
+	margin-block-start: 20px; }
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center; }
+
+.newsletter-text + .newsletter-submit {
+	margin-block-start: 10px; }
+
+.newsletter-text {
+	height: 35px;
+	width: 300px;
+	max-width: 350px;
+	padding-inline-start: 10px;
+	placeholder: Enter email address;
+	border: 1.5px solid lightgrey;
+	border-radius: 5px;
+	outline: 1.5px solid lightgrey; }
+	
+.newsletter-submit {
+	height: 40px;
+	line-height: 35px;
+	width: 300px;
+	max-width: 300px;
+	padding-inline: 25px;
+	background: grey; 
+	border: none;
+	border-radius: 10px; 
+	color: #fff; 
+	font-size: 1.1rem; 
+	transition: background-color 0.5s ease-in-out; }
+	
+.newsletter-submit:hover {
+	height: 40px;
+	line-height: 35px;
+	width: 300px;
+	max-width: 300px;
+	padding-inline: 25px;
+	background: lightgrey; 
+	border: none;
+	border-radius: 10px; 
+	color: #fff; 
+	font-size: 1.1rem; }
+	
+captcha {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+	font-family: sans-serif;
+	height: 120px;
+	width: 90%;
+	margin-inline: auto; 
+	background-color: #999; }
+	
+#newsletter-submit {}</style>
+</head>
+<body>
+	<components>
+	<newsletter-signup-form>
+		<header>
+			<img class="newsletter-logo" src="images/beaver-logo-tr.png" alt="Beaver logo">
+			<h1 for="newsletter">ニュースレターの登録</h1>				
+		</header>
+		<info>
+			<p>カナダご旅行の際に役立つ素晴らしいヒントや、日本からのお客様向けの最新ツアー情報をぜひお受け取りください。</p>
+			<ul>
+				<li>日本からのお客様向けの最新ツア</li>
+				<li>日本からのお客様向けの最新ツア</li>
+				<li>日本からのお客様向けの最新ツア</li>
+			</ul>
+		</info>
+		<form>
+			<input class="newsletter-text" type="text" name="newsletter" placeholder="電子メールアドレス">
+			<input id="newsletter-submit" class="newsletter-submit" type="submit" value="無料でサインアップ!">
+		</form>
+		<captcha>
+		Captcha
+		</captcha>
+		<footer>
+			<p>情報をぜひお受け取りください。 情報をぜひお受け取りください。</p>
+		</footer>
+	</newsletter-signup-form>
+
+	</components>
+</body>
+</html>

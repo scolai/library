@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*  reset  */
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+	    display: block;
+    }
+    body {
+	    line-height: 1;
+    }
+    ol, ul {
+	    list-style: none;
+    }
+    blockquote, q {
+	    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+	    content: '';
+	    content: none;
+    }
+    table {
+	    border-collapse: collapse;
+	    border-spacing: 0;
+    }
+    body {
+        font-family: Arial;
+        margin: 0;  }
+        
+/*  end of reset  */        
+        
+        
+* {
+	margin: 0;
+	padding: 0;	}        
+	
+body {
+	width: 75%; 
+	margin: 0 auto;
+    background: lightgrey; }
+#main {
+	padding: 0 100px 0;
+	border-left: 25px solid orange;
+	border-right: 25px solid orange;	
+    height: 400px; 
+    background: #EFFCF6; }
+
+.black {
+    background: #000000; }
+.black p {
+	color:#ffffff;	}      
+
+/*	sets default to hide menu	*/  
+.black p span {  
+	background: red;
+	display: none; }    
+
+/*	during p hover, displays 1st layer	*/
+.black p:hover > span {
+	display: block;	}
+	
+/*	sets 2nd layer container to relative position, to allow 2nd layer to display to the right
+of 1st layer	*/
+
+.black p > span:nth-child(3) {
+	position: relative;	}
+
+
+/*	set 2nd layer position to absolute to allow it to display to the right of container.
+	During 1st layer/last item hover, displays 2nd layer	*/
+
+.black p:hover span:last-child:hover span {
+	position: absolute;
+	top: 10%;
+	left: 100%;
+	display: block;
+	background: blue;	}
+
+
+
+  
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+
+    <!-- what is width of box with width property? 
+    	add child element, with margins etc without width 
+    	do same, with width -->
+    <div class="black"> 
+    	<p>TEST TEXT
+    		<span>LAYER1.1</span>	
+    		<span>LAYER1.2</span>	    
+    		<span>LAYER1.3
+	    		<span>LAYER2.1</span>	
+	    		<span>LAYER2.2</span>	
+	    		<span>LAYER2.3</span>		    			    		    			
+    		</span>	        					
+    	</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

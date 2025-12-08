@@ -1,0 +1,33 @@
+@layer modules.input-label-inside {
+
+	.input-label-inside .wrapper {}
+
+	.input-label-inside input[type="text"] {
+		width: 350px;
+		max-width: 350px;
+		height: 4rem;
+		border: 1px solid var(--gray-lighter);
+		border-radius: var(--size-radius-lg);
+		outline: none; 
+		padding-inline: 10px;
+		padding-block-start: 25px;
+		background-color: var(--white);
+		font-family: var(--font-family-label);
+		letter-spacing: var(--tracking-xl); 
+		transition: box-shadow var(--transition-default) ease; }
+
+	.input-wrapper {
+		position: relative;}
+
+	.input-label {
+		position: absolute;
+		left: 13px;
+		top: 10px;
+		font-family: var(--font-family-label);
+		font-size: var(--font-size-label);
+		color: var(--gray-dark);
+		letter-spacing: 1.25px;
+		background-color: var(--transparent); }
+
+	input[type="text"]:focus {
+		box-shadow: 0px 1px 9px 0px var(--gray-lighter); }}

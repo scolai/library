@@ -1,0 +1,41 @@
+@layer modules.input-thick-border {
+
+	.input-thick-border {
+	
+		.wrapper {
+			background-color: var(--gray-lightest); }
+
+		input[type="text"] {
+			width: 35ch; 
+			max-width: 350px;
+			height: 45px;
+			border: 3px solid var(--gray-lighter);
+			border-radius: 5px;
+			outline: none; 
+			padding-inline: 20px;
+			background-color: var(--white);
+			transition: box-shadow var(--duration-default) ease; }
+			
+		input[type="text"]:focus {
+			box-shadow: 0px 1px 9px 0px var(--gray-lighter);}
+}
+
+	@scope (.input-thick-border) {
+		.wrapper {
+			background-color: var(--gray-lightest); }
+
+		input[type="text"] {
+			width: 35ch; 
+			max-width: 350px;
+			height: 45px;
+			border: 3px solid var(--gray-lighter);
+			border-radius: 5px;
+			outline: none; 
+			padding-inline: 20px;
+			background-color: var(--white);
+			transition: box-shadow var(--duration-default ease; }
+			
+		input[type="text"]:focus {
+			box-shadow: 0px 1px 9px 0px var(--gray-lighter);}
+	}
+}

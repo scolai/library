@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/sign_in_forms/simple-card/style.css */
+@layer reset, theme, layout, modules.form-simple-card, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("form-simple-card.css") layer(modules.form-simple-card);
+@import url("utilities.css") layer(utilities);

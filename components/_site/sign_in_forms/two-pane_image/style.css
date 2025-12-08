@@ -1,0 +1,32 @@
+/* /home/blue/webace/library/components/sign_in_forms/two-pane_image/style.css */
+THIS IS NEW
+	@layer reset {
+		*,
+		*::before,
+		*::after { box-sizing: border-box; }
+		
+		body {
+			margin: unset; padding: unset; }
+
+		button,
+		input,
+		textarea,
+		select { font: inherit; }
+		
+		img,
+		picture,
+		svg,
+		canvas {
+			display: block;
+			max-inline-size: 100%; 
+			height: auto; }
+			
+		@media (prefers-reduced-motion: reduce) {
+			*,
+			*::before,
+			*::after {
+				animation-duration: 0.01ms !important;
+				animation-iteration-count: 1 !important;
+				transition-duration: 0.01ms !important;
+				scroll-behavior: auto !important; }}}
+

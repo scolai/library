@@ -1,0 +1,74 @@
+@layer modules.input-icon {
+
+.input-icon {
+
+	.wrapper {}
+
+	.input-wrapper {
+		position: relative;  }
+
+	input[type="text"] {
+		height: 2.55rem;
+		width: 350px; 
+		max-width: 350px;
+		border: 0;
+		box-shadow: 0 -1px 0px 0px var(--gray-lighter) inset, 0 1px 0px 0px var(--gray-lighter) inset, 1px 0px 0px 0px var(--gray-lighter) inset;
+		border-start-start-radius: var(--size-radius-md);
+		border-end-start-radius: var(--size-radius-md);
+		outline: none; 
+		padding-inline-start: 1rem;
+		padding-inline-end: 30px;
+		background-color: var(--white); }
+
+	input[type="text"]:focus { 
+		box-shadow: 0px 0px 1px 0px var(--gray-lighter) inset; }
+		
+	.input-label {
+		position: absolute;
+		top: -50%;
+		left: 0rem;
+		font-family: var(--font-sans);
+		font-size: var(--font-size-label);
+		color: var(--gray-dark); }
+	
+	.input-button {
+		position: absolute;
+		top: 0%;
+		right: -10%;
+		border: none;
+		border-start-end-radius: var(--size-radius-md);
+		border-end-end-radius: var(--size-radius-md);
+		height: 2.55rem;
+		width: 2.5rem;
+		padding-inline: 0.5rem;
+		z-index: 50;
+		background-color: var(--gray-darker);
+		color: var(--gray-lighter);
+		font-family: var(--font-family-label);
+		font-size: var(--font-size-label);		
+		cursor: pointer; 
+		letter-spacing: 0.05rem;
+		word-spacing: 0.025rem;	}
+
+	.input-icon {
+		position: absolute;
+		top: 20%;
+		right: -8%;
+		z-index: 90;
+		height: 1.5rem;
+		width: 1.5rem;
+		background-color: white;
+		mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpolygon points='16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9'/%3E%3C/svg%3E");
+
+/*		mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpolygon points='16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9'/%3E%3C/svg%3E"); 
+		--webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpolygon points='16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9'/%3E%3C/svg%3E"); */
+		mask-position: center;
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		mask-type: alpha;
+		-webkit-mask-position: center;
+		-webkit-mask-size: contain;
+		-webkit-mask-repeat: no-repeat;
+		-webkit-mask-type: alpha; }
+}
+}

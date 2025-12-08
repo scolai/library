@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/inputs/soft-background/style.css */
+@layer reset, theme, layout, modules.input-bottom-border, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("input-soft-background.css") layer(modules.input-soft-background);
+@import url("utilities.css") layer(utilities);

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Components Galleria - Buttons</title>
+<link rel="stylesheet" media="screen" href="library.css">
+<style>
+
+
+    *,
+    ::before,
+    ::after {
+		box-sizing: border-box;
+        margin: 0;
+        padding: 0; }
+        
+    body {
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 100%;
+        margin-block-start: 100px; 
+        margin-inline: auto;
+        width: 65%;         }     
+
+    h1 { font-size: var(--title); }
+    h2, h3 { font-size: 1em; font-weight: 100;   }
+                    
+	flex-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 3px solid var(--n-700);
+        list-style-type: none; }
+		
+	flex-item {
+		display: flex;
+		flex-direction: column; 
+		align-items: center;
+		justify-content: center; }
+		
+	flex-item flex-row { border: none; }
+	flex-item flex-row > * { margin-inline-start: 30px;  }
+    
+    input[type=button] {   
+		display: flex;
+		align-items: center;     
+		line-height: 1.2;
+		min-height: 40px;
+        font-weight: 600;
+        font-family: "Helvetica";
+        letter-spacing: 0.5px;
+        cursor: pointer; }
+
+        
+    a { text-decoration: none; }    
+
+
+																		/* buttons */
+	.btn-sm { padding: var(--btn-sm-padding); }
+	.btn-md { padding: var(--btn-md-padding); }
+	.btn-lg { padding: var(--btn-lg-padding); }
+	.btn-icon-lft::before { font-family: sans-serif; content: "\5143"; margin-inline-end: 10px; }
+	.btn-icon-rgt::after { font-family: sans-serif; content: "\5143"; margin-inline-start: 10px; }
+
+
+     
+																		/* radius */
+    .radius-sm { border-radius: 4px; }
+    .radius-md { border-radius: 10px; }
+    .radius-full { border-radius: 50px; }
+    
+																		/* padding */																	
+	.pd-2xsm { padding-inline: var(--space-4) !important; padding-block: var(--space-8); }
+	.pd-xsm {  padding-inline: var(--space-8) !important; padding-block: var(--space-8); }
+	.pd-sm {  padding-inline: var(--space-12) !important; padding-block: var(--space-12); }	
+	.pd-md {  padding-inline: var(--space-16) !important; padding-block: var(--space-16); }	
+	
+	
+	
+																		/* borders */
+    .b-none { border: 0; } 
+    .b-hairline { border: var(--b-hairline) solid var(--n-700); }
+    .b-2x { border: var(--b-sm) solid var(--n-700); padding-block: calc(1em - var(--b-sm)); }
+    .b-3x { border: var(--b-md) solid var(--n-700); padding-block: calc(1em - var(--b-md)); }
+	.b-4x { var(--b-lg); }
+	.b-6x { var(--b-xl); }
+	        
+																		/* shades */
+    .background-300 { background-color: var(--n-300); }
+    .background-400 { background-color: var(--n-400); }
+    .background-500 { background-color: var(--n-500); }
+    .background-600 { background-color: var(--n-600); }
+    .background-700 { background-color: var(--n-700); }   
+    .background-800 { background-color: var(--n-800); }
+    .background-900 { background-color: var(--n-900); }       
+    
+    
+																		/* linear gradient */
+	.v-grad { background-image: linear-gradient(180deg, var(--grad-start), var(--grad-end)); }
+	.h-grad { background-image: linear-gradient(270deg, var(--grad-start), var(--grad-end)); }
+       
+																		/* text */
+    .uppercase { text-transform: uppercase; }
+    .fnt-100 { color: var(--n-100); }
+    .fnt-200 { color: var(--n-200); }
+    .fnt-300 { color: var(--n-300); }
+    .fnt-400 { color: var(--n-400); }
+    .fnt-500 { color: var(--n-500); }
+    .fnt-600 { color: var(--n-600); }
+    .fnt-700 { color: var(--n-700); }   
+    .fnt-800 { color: var(--n-800); }
+    .fnt-900 { color: var(--n-900); }       																    
+    .fnt-sec-lg { font-size: 16px; }
+																		/* elevations */
+	.profile-btm-blk-3x { box-shadow: var(--profile-x-none) var(--profile-by-md) 0 1px var(--n-100); }
+	.profile-btm-lgt-3x { box-shadow: var(--profile-x-none) var(--profile-by-md) 0 1px var(--n-600); }
+	.profile-top-blk-3x { box-shadow: var(--profile-x-none) var(--profile-ty-md) 0 1px var(--n-600); }
+	.profile-top-lgt-3x { box-shadow: var(--profile-x-none) var(--profile-ty-md) 0 1px var(--n-600); }
+	.elevation-lowest { box-shadow: var(--elevation-lowest); }
+	.elevation-low { box-shadow: var(--elevation-low); }
+	.elevation-md { box-shadow: var(--elevation-md); }
+	.elevation-high { box-shadow: var(--elevation-high); }
+	.elevation-highest { box-shadow: var(--elevation-highest); }
+	
+
+</style>
+</head>
+
+<body>
+      <h1>Buttons</h1>
+        <flex-row>   <!-- start row -->
+			<flex-item><h3>Small rounded</h3></flex-item>
+            <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-sm"></flex-item>
+            <flex-item>
+                <flex-row>  <!-- display flex -->
+                    <flex-item><input type="button" value="Option A" class="btn-md b-none radius-sm border-none fnt-100 background-700"></flex-item>
+                    <flex-item><input type="button" value="Option B"  class="btn-md radius-sm b-2x background-900"></flex-item>
+                    <flex-item><input type="button" value="Option C"  class="btn-md radius-sm b-3x background-900"></flex-item>
+                </flex-row>
+            </flex-item>
+        </flex-row>  <!-- end row  -->
+                 
+        <flex-row>   <!-- start row -->
+			
+                <flex-item><h3>Large rounded</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-md"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-700 fnt-100 radius-md"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md radius-md b-2x background-900"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md radius-md b-3x background-900"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+
+                 
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>Full rounded</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md background-300 fnt-900 radius-full"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md background-700 fnt-100 background-400 radius-full "></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md background-900 fnt-100 b-2x radius-full"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md background-900 fnt-100 b-3x radius-full border-lg"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+            
+
+      
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>Square</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-700 fnt-100 background-400"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md background-900 fnt-100 b-2x"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md background-900 fnt-100 b-3x"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+
+      
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>Uppercase text</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-sm uppercase"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-300 fnt-900 radius-sm uppercase"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md background-900 fnt-100 b-2x radius-sm uppercase"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md background-900 fnt-100 b-3x radius-sm uppercase"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+      
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>With soft shadow</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-sm elevation-low"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-300 fnt-900 radius-sm elevation-low"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md background-900 fnt-100 b-2x radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md background-900 fnt-100 b-3x radius-sm"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+      
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>Vertical gradient</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-sm v-grad"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-300 fnt-900 radius-sm v-grad"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md b-none background-900 fnt-300 b-2x radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md b-none background-900 fnt-300 b-3x radius-sm"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+
+      
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>Horizontal gradient</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-sm h-grad"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-300 fnt-900 radius-sm h-grad"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md b-none background-900 fnt-300 b-2x radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md b-none background-900 fnt-300 b-2x radius-sm"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+      
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>Raised with bottom profile</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-sm profile-btm-blk-3x"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-700 fnt-100 background-400 radius-sm profile-btm-lgt-3x"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md b-none background-700 fnt-100 background-900 b-2x radius-sm profile-btm-lgt-3x"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md b-none background-700 fnt-100 background-900 b-3x radius-sm profile-btm-lgt-3x"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+      
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>Raised with top profile</h3></flex-item>
+                <flex-item><input type="button" value="Primary" class="btn-md b-none background-300 fnt-900 radius-sm profile-top-blk-3x"></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-700 fnt-100 background-400 radius-sm profile-top-lgt-3x"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md b-none background-700 fnt-100 background-900 b-2x radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md b-none background-700 fnt-100 background-900 b-2x radius-sm"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+           
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>With icon on left</h3></flex-item>
+                <flex-item><button class="btn-md b-none background-300 fnt-900 radius-sm btn-icon-lft">Primary</button></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-700 fnt-100 background-400 radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md b-none background-700 fnt-100 background-900 b-2x radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md b-none background-700 fnt-100 background-900 b-2x radius-sm"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+        
+
+        <flex-row>   <!-- start row -->
+                <flex-item><h3>With icon on right</h3></flex-item>
+                <flex-item><button class="btn-md b-none background-300 fnt-900 radius-sm btn-icon-rgt">Primary</button></flex-item>
+                <flex-item>
+                    <flex-row>  <!-- display flex -->
+                        <flex-item><input type="button" value="Option A" class="btn-md b-none background-700 fnt-100 background-400 radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option B"  class="btn-md b-none background-700 fnt-100 background-900 b-2x radius-sm"></flex-item>
+                        <flex-item><input type="button" value="Option C"  class="btn-md b-none background-700 fnt-100 background-900 b-2x radius-sm"></flex-item>
+                    </flex-row>
+                </flex-item>
+        </flex-row>  <!-- end row  -->
+</body>
+</html>

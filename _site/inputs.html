@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Component Gallery - Inputs</title>
+<link rel="stylesheet" media="screen" href="library.css">
+
+<style>
+
+    *,
+    ::before,
+    ::after {	box-sizing: border-box; margin: 0; padding: 0; }  
+
+
+	        
+																		/* shades */
+    .bg-300 { background-color: var(--n-300); }
+    .bg-400 { background-color: var(--n-400); }
+    .bg-500 { background-color: var(--n-500); }
+    .bg-600 { background-color: var(--n-600); }
+    .bg-700 { background-color: var(--n-700); }   
+    .bg-800 { background-color: var(--n-800); }
+    .bg-900 { background-color: var(--n-900); }       
+    
+
+
+
+    body {
+        font-family: Arial;
+        font-size: 100%;
+        font-weight: 400;
+        width: 80vw;
+        margin-inline: auto;
+        margin-block-start: 80px; }    
+    h1 { font-size: var(--title); }
+    h2 {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        font-size: var(--caption); }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        position: relative; }
+    input[type=text] {
+		height: 40px;
+		padding-inline-start: 10px;
+        width: 250px;
+        border: var(--b-hairline) solid var(--n-600);
+        outline: none; }
+    input[type=text].text-labelinsideinput { padding-top: 30px; }                 
+    label {
+        font-size: var(--label);
+        position: absolute;
+        top: -25px;
+        left: 0; }
+
+    .labelinsideinput {
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        font-weight: 200;
+        font-size: 1em; } 
+    .overlappinglabel {
+        position: absolute;
+        top: -12px;
+        left: 10px;
+        padding: 5px 10px;
+        background: #ffffff;
+        font-weight: 200px;
+        font-size: .85em; }
+
+     .iconinsideinput {
+        position: absolute;
+        top: 103px;
+        left: 156px;
+        font-weight: 200px; }
+
+    flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 25px 0; }    
+    flex-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 200px;
+        margin: 10px 15px 30px;
+        flex-basis: 50%;
+        background-color: var(--n-800);
+        border: 4px solid #E4E7EB; }
+    
+    
+	        
+																		/* shades */
+    .bg-300 { background-color: var(--n-300); }
+    .bg-400 { background-color: var(--n-400); }
+    .bg-500 { background-color: var(--n-500); }
+    .bg-600 { background-color: var(--n-600); }
+    .bg-700 { background-color: var(--n-700); }   
+    .bg-800 { background-color: var(--n-800); }
+    .bg-900 { background-color: var(--n-900); } 
+    
+    
+        
+																		/* linear gradient */
+	.v-grad { background-image: linear-gradient(180deg, var(--grad-start), var(--grad-end)); }
+	.h-grad { background-image: linear-gradient(270deg, var(--grad-start), var(--grad-end)); }
+       
+																		/* text */
+    .uppercase { text-transform: uppercase; }
+    .fnt-100 { color: var(--n-100); }
+    .fnt-200 { color: var(--n-200); }
+    .fnt-300 { color: var(--n-300); }
+    .fnt-400 { color: var(--n-400); }
+    .fnt-500 { color: var(--n-500); }
+    .fnt-600 { color: var(--n-600); }
+    .fnt-700 { color: var(--n-700); }   
+    .fnt-800 { color: var(--n-800); }
+    .fnt-900 { color: var(--n-900); }       																    
+    .fnt-body { font-size: var(--body); }
+    .fnt-subheading { font-size: var(--subheading); }
+
+
+      
+																		/* elevations */
+	.profile-btm-blk-3x { box-shadow: var(--profile-x-none) var(--profile-by-md) 0 1px var(--n-100); }
+	.profile-btm-lgt-3x { box-shadow: var(--profile-x-none) var(--profile-by-md) 0 1px var(--n-600); }
+	.profile-top-blk-3x { box-shadow: var(--profile-x-none) var(--profile-ty-md) 0 1px var(--n-600); }
+	.profile-top-lgt-3x { box-shadow: var(--profile-x-none) var(--profile-ty-md) 0 1px var(--n-600); }
+	.elevation-lowest { box-shadow: var(--elevation-lowest); }
+	.elevation-low { box-shadow: var(--elevation-low); }
+	.elevation-md { box-shadow: var(--elevation-md); }
+	.elevation-high { box-shadow: var(--elevation-high); }
+	.elevation-highest { box-shadow: var(--elevation-highest); }
+	.elevation-low-inset { box-shadow: inset var(--elevation-low); } 
+	.profile-btm-blk-3x { box-shadow: inset var(--profile-x-none) var(--profile-by-md) 0 1px var(--n-100); }	
+
+
+	
+																		/* borders */
+    .b-none { border: 0 !important;  } 
+    .b-hairline { border: var(--b-hairline) solid var(--n-700); }
+    .b-2x { border: var(--b-sm) solid var(--n-700) !important; }
+    .b-3x { border: var(--b-md) solid var(--n-700) !important; }
+	.b-4x { border: var(--b-lg) solid var(--n-700) !important;  }
+	.b-6x { border: var(--b-xl) solid var(--n-700) !important; }
+	.border-left-none { border-left: none !important; }    
+    .border-right-none { border-right: none !important; }
+    .border-top-none { border-top: none !important; }
+    .border-bottom-none { border-bottom: none !important; }	
+	        
+        
+																		/* radius */
+    .radius-sm { border-radius: 4px; }
+    .radius-md { border-radius: 10px; }
+    .radius-full { border-radius: 50px; }
+       
+     
+  
+</style>
+</head>
+
+<body>
+    <h1>Inputs</h1>
+    
+    <flex-row>          <!-- new row -->
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="radius-sm" ></li>
+            </ul>
+            <h2>Small rounded</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="radius-full" ></li>
+            </ul>
+            <h2>Full rounded</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+    <flex-row>          <!-- new row -->
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="radius-md" ></li>
+            </ul>
+            <h2>Large rounded</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="radius-none" ></li>
+            </ul>
+            <h2>Square</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+    <flex-row>          <!-- new row -->
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="radius-sm b-3x" ></li>
+            </ul>
+            <h2>Thick border</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="b-none radius-sm" ></li>
+            </ul>
+            <h2>No border</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+        <flex-row>          <!-- new row -->
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="elevation-low-inset radius-sm" ></li>
+            </ul>
+            <h2>Inset shadow</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="elevation-low radius-sm" ></li>
+            </ul>
+            <h2>Box shadow</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+    <flex-row>          <!-- new row -->
+		<flex-item>
+			<ul>        
+				<li><input type="text" class="b-3x border-left-none border-right-none border-top-none" ></li>
+			</ul>
+			<h2>Bottom border</h2>
+		</flex-item> 
+
+		<flex-item class="bg-900">
+			<ul>        
+				<li><input type="text" class="bg-800 b-none radius-sm" ></li>
+			</ul>
+			<h2>Soft background</h2>            
+		</flex-item>
+    </flex-row>          <!-- end of row -->
+    
+        
+    <flex-row>          <!-- new row -->
+        <flex-item class="bg-900">
+            <ul>        
+                <li><input type="text" class="bg-800 b-3px border-left-none border-right-none border-top-none" ></li>
+            </ul>
+            <h2>Soft background with bottom border</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>        
+                <li><input type="text" placeholder="Placeholder" class="fnt-500 fnt-subheading b-4x border-left-none border-right-none border-top-none bg-800"></li>
+            </ul>
+            <h2>Bottom border only with placeholder label</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+    <flex-row>              <!-- new row -->
+        <flex-item>
+            <ul>        
+                <li><label for="earth" class="labelinsideinput">Label</label></li>
+                <li><input type="text" placeholder="Placeholder" name="earth" class="text-labelinsideinput"></li>
+            </ul>
+            <h2>Label inside input</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>
+                <li><label for="overlappedinput" class="overlappinglabel">Label</label></li>
+                <li><input type="text" name="overlappedinput" class="radius-sm border-lg  " ></li>
+            </ul>
+            <h2>Overlapping label</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+    <flex-row>          <!-- new row -->
+        <flex-item>
+            <ul>
+                <li><label for="bob" class="uppercase">Label</label></li>
+                <li><input type="text" name="bob" class="radius-sm" ></li>
+            </ul>
+            <h2>Small uppercase label</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul class="iconinsideinput-container">        
+                <li class="iconinside-input"><input type="text" class="radius-sm" ></li>
+            </ul>
+            <h2>With icon</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+    <flex-row>          <!-- new row -->
+        <flex-item>
+            <ul>        
+                <li><div class="iconcontainer-input"></div><input type="text" class="radius-sm" ></li>
+            </ul>
+            <h2>With icon with border</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>        
+                <li><input type="text" class="radius-sm"></li>
+            </ul>
+            <h2>Icon emphasized</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+    
+    
+    <flex-row>          <!-- new row -->
+        <flex-item>
+            <ul>
+                <li><label>Label</label></li>
+                <li><input type="text" class="radius-sm" ></li>
+            </ul>
+            <h2>Connected inputs with inset labels</h2>
+        </flex-item> 
+
+        <flex-item>
+            <ul>        
+                <li><input type="text" placeholder="Placeholder" class="radius-sm" ></li>
+            </ul>
+            <h2>Connected inputs with placeholder only</h2>            
+        </flex-item>
+    </flex-row>          <!-- end of row -->
+</body>
+</html>

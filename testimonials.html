@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library | Testimonial sections</title>
+  <link rel="stylesheet" media="screen" href="library.css">
+  <link rel="stylesheet" media="screen" href="normalizer.css">
+<style>
+
+*,
+::before,
+::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+item,
+v-card-testimonial,
+info { display: block; }
+
+
+body {
+	background-color: var(--n-800); 
+	height: 100vh; }
+
+wrapper {
+	font-family: sans-serif; 
+	width: 80vw;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr); 
+	row-gap: 50px;
+	column-gap: 15px; }
+
+wrapper > * {
+	height: 300px; }
+
+
+item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: #ddd;
+	border: 2px solid #999; }
+
+
+h1 {
+	width: 80vw;
+	margin-inline: auto; }
+h2 { 
+	position: absolute; 
+	left: 0;
+	bottom: -25px;
+	font-size: var(--subheading); }	
+
+
+.horizontal-spacer > * + * {
+	margin-inline-start: 5px; }
+
+
+
+v-card-testimonial {
+	padding-inline: 10px;
+	padding-block: 15px;
+	width: 300px;
+	max-width: 325px;
+	background-color: var(--bg-900);
+	border: 2px solid var(--n-500); }
+v-card-testimonial img {}
+v-card-testimonial info {}
+v-card-testimonial info p {
+	text-align: center;
+	font-family: sans-serif; 
+	font-weight: 500; }
+v-card-testimonial author * {
+	text-align: center; }
+
+.vertical-spacer > * + * { margin-block-start: 15px; }
+</style>
+</head>
+<body>
+	<h1>Testimonials</h1>
+	<wrapper>
+		<item class="horizontal-spacer">
+			<v-card-testimonial class="vertical-spacer">
+				<info>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				</info>
+				<author>
+					<name>Ichiro Suzuki-san</name>
+					<service>Niagara Falls Walking Tour</service>
+				</author>
+				<img src="" class="review-card-image">
+			</v-card-testimonial>	
+			<v-card-testimonial>
+				<info>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				</info>
+				<author>
+					<name></name>
+					<service></service>
+				</author>
+				<img src="" class="review-card-image">
+			</v-card-testimonial>
+			<v-card-testimonial>
+				<info>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				</info>
+				<author>
+					<name></name>
+					<service></service>
+				</author>
+				<img src="" class="review-card-image">
+			</v-card-testimonial>					
+			<h2>Stacked layout on card</h2>
+		</item>
+		<item>
+			<testimonial>
+				
+				
+			</testimonial>
+			<h2></h2>
+		</item>
+		<item>
+			<testimonial>
+				
+				
+			</testimonial>
+			<h2></h2>
+		</item>
+		<item>
+			<testimonial>
+				
+				
+			</testimonial>
+			<h2></h2>
+		</item>
+		<item>
+			<testimonial>
+				
+				
+			</testimonial>
+			<h2>Single horizon layout in a card</h2>
+		</item>
+		<item>
+
+		</item>
+	</wrapper>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/ ... /top-image-full-width-button/style.css */
+@layer reset, theme, layout, modules.top-image-full-width-button.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("top-image-full-width-button.css") layer(modules.top-image-full-width-button);
+@import url("utilities.css") layer(utilities);

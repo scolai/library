@@ -1,0 +1,164 @@
+@layer reset, global, modules;
+
+@layer reset {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box; }
+	body {
+		margin: unset; }
+	button, input, textarea, select {
+		font: inherit; }
+	img, picture, svg, canvas {
+		display: block;
+		max-width: 100%;
+		height: auto; } }
+
+@layer global {
+	body {
+		font-family: Helvetica, Arial, sans-serif; } }
+
+/* this demonstrates using BEM modifiers. See the corresponding HTML for how to link this CSS to the html tag */
+@layer modules {
+	/* targets the message module by its class name */
+	/* this series introduces the base message. each subsequent modifier changes the message colour to green, orange and red accordingly. */
+	.message {
+		padding: 0.8em 1.2em;
+		border-radius: 0.2em;
+		border: 1px solid #265559;
+		color: #265559;
+		background-color: #e0f0f2; } }
+		
+	.message--success {
+		color: #2f5926;
+		border-color: #2f5926;
+		background-color: #cfe8c9; }
+	.message--warning {
+		color: #594826;
+		border-color: #594826;
+		background-color: #e8dec9; }
+	.message--error {
+		color: #59262f;
+		border-color: #59262f;
+		background-color: #e8c9cf; } }
+
+/* button module and modifiers */
+	.button {
+		padding: 0.5em 0.8em;
+		border: 1px solid #265559;
+		border-radius: 0.2em;
+		background-color: transparent;
+		font-size: 1rem; }
+	.button--success {
+		border-color: #cfe8c9;
+		color: #fff;
+		background-color: #2f5926; }
+	.button--danger {
+		border-color: #e8c9c9;
+		color: #fff;
+		background-color: #a92323; }	
+	.button--small { font-size: 0.8rem; }
+	
+	.button--large { font-size: 1.2rem; }
+	
+/* an example of a module using multiple elements and subelements */		
+@layer modules {
+	/* the main container */
+	.media {
+		display: flex;
+		gap: 1.5em;
+		padding: 1.5rem;
+		background-color: #eee;
+		border-radius: 5px; }
+	
+	/* double underscore indicates the element after the underscore is within the module before the underscore. IOW, when there is a double underscore, what is to the left is a module name and what is the right is an element within that module. */
+	
+	/* these are the image and body subelements */
+	.media__image {
+		align-self: start; }
+	.media__body {
+		overflow: auto;
+		margin-block-start: 0; }
+	/* the title within the body */
+	.media__body > h4 {
+		margin-block-start: 0;
+		color: #333; } }
+	
+	/* this demonstrates the versatility of using the module method by adding a variant that switches the image from left to right side */
+	.media--right {
+		flex-direction: row-reverse; }
+		
+/* this demonstrates the styling for the dropdown menu, which is an example of combining multiple modules towards an effect (vs making the mistake of having a module perform more than one purpose or function */
+@layer modules {
+	.dropdown {
+		display: inline-block; 
+		position: relative; }
+	.dropdown__toggle {
+		padding: 0.5em 2em 0.5em 1.5em;
+		border: 1px solid #ccc;
+		font-size: 1rem;
+		background-color: #eee; }
+	.dropdown__toggle::after {
+		content: "";
+		position: absolute;
+		right: 1em;
+		top: 1em;
+		border: 0.3em solid;
+		border-color: black transparent transparent; }
+	.dropdown__drawer {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 2.1em;
+		min-width: 100%;
+		background-color: #eee; }
+	.dropdown.is-open .dropdown__toggle::after {
+		top: 0.7em;
+		border-color: transparent transparent black; }
+	.dropdown.is-open .dropdown__drawer {
+		display: block; } }
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				
+

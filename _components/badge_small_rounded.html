@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library | Badges - Small rounded</title>
+  <link rel="stylesheet" media="screen" href="/css/normalizer.css">
+  
+
+<style>
+:root {	
+  --value-scale: 12%;
+  --value0: hsl(0, 0%, calc(0 * var(--value-scale))); /* darkest */
+  --value1: hsl(0, 0%, calc(1 * var(--value-scale))); /* darker */
+  --value2: hsl(0, 0%, calc(2 * var(--value-scale))); /* dark */
+  --value3: hsl(0, 0%, calc(3 * var(--value-scale))); /* darkee */
+  --value4: hsl(0, 0%, calc(4 * var(--value-scale))); /* grey */
+  --value5: hsl(0, 0%, calc(5 * var(--value-scale))); /* lightgrey */
+  --value6: hsl(0, 0%, calc(6 * var(--value-scale))); /* lightee */
+  --value7: hsl(0, 0%, calc(7 * var(--value-scale))); /* light */
+  --value8: hsl(0, 0%, calc(8 * var(--value-scale))); /* lighter */
+  --value9: hsl(0, 0%, calc(9 * var(--value-scale))); } /* lightest */ 
+  
+body {
+	background-color: var(--value9);
+	height: 100vh; }
+
+
+
+	{ display: block; }
+
+    * {
+        margin: 0;
+        padding: 0; }  
+
+    body {
+        font-family: Arial;
+        font-size: 100%;
+        font-weight: 400;
+        padding: 50px 200px; }    
+    h1 {
+        font-family: "PT Sans"; 
+        font-size: 78px;
+        font-weight: 200;
+        margin: 50px 25px;
+        line-height: 78px; }
+    h2 {
+        position: absolute;
+        left: 0;
+        bottom: -25px;    
+        font-family: "PT Sans";
+        font-size: 1em;
+        font-weight: 200; }
+    span {
+        font-family: Arial; 
+        font-size: 16px; 
+        font-weight: 400; 
+        padding: 5px 12px 4px;}
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 25px 0; }    
+    .flex-item-one, .flex-item-two, .flex-item-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 200px;
+        margin: 15px 10px;
+        flex-basis: 25%;
+        background: #F5F7FA;
+        border: 3px solid #CBD2D9; }
+    ul {
+        list-style-type: none; 
+        position: relative; }
+    ul li:nth-child(1) {
+        position: absolute;
+        top: 10px;
+        left: 2px; }
+    ul li:nth-child(1) > span {
+        background: #000000;
+        font-family: "M+ 2P";
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 1em;
+        clip-path: circle(100px); }
+            
+    .softbackground {
+        background: #E4E7EB; }
+    .solidbackground {
+        background: #486581;
+        color: #FFFFFF; }
+    .smallrounded {
+        border-radius: 5px; }
+    .fullrounded {
+        border-radius: 50px}
+    .largerounded {
+        border-radius: 10px;}
+    .bottomborder {
+        box-shadow: 0 0.2em #BCCCDC; }
+    .thinsoftborder {
+        border: 2px solid #CBD2D9; }
+    .thicksoftborder {
+        border: 4px solid #CBD2D9; }
+    .circle {
+        padding: unset;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+ 
+
+</style>
+</head>
+<body>
+    <div id="wrapper">    
+		<h2>Solid background / Full rounded</h2>
+        <div class="flex-item-one">
+			<span class="solidbackground fullrounded">Badge</span>
+        </div> 
+
+</body>
+</html>

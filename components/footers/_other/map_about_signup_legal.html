@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Footers - Sitemap / About / Newsletter Signup / Legal</title>
+<link rel="stylesheet" href="../main.css">
+
+<style>
+	@layer reset, theme, base, layout, modules, utilities;
+
+	@layer reset {
+		*,
+		*::before,
+		*::after { box-sizing: border-box; }
+		
+		body {
+			margin: unset; padding: unset; }
+
+		button,
+		input,
+		textarea,
+		select { font: inherit; }
+		
+		img,
+		image,
+		picture,
+		svg,
+		canvas {
+			display: block;
+			max-inline-size: 100%; 
+			height: auto; }
+			
+		@media (prefers-reduced-motion: reduce) {
+			*,
+			*::before,
+			*::after {
+				animation-duration: 0.01ms !important;
+				animation-iteration-count: 1 !important;
+				transition-duration: 0.01ms !important;
+				scroll-behavior: auto !important; }}}
+
+
+	@layer theme {
+		:root {
+			--brand-color: var(--n-300);
+			--background-color-1: var(--n-800);
+			--background-color-2: var(--n-700);
+			--foreground-color-1: var(--n-600);
+			--foreground-color-2: var(--n-400); 
+			--font-main: var(--font-sans);
+			--font-heading: var(--font-serif); 
+			--font-heading-color: var(--n-200);
+			--font-body-color: var(--n-100);
+			
+			--accent-color: var(--brand-color);
+			color-scheme: light; 
+			
+			--link-size: var(--fs-14); }}
+			
+	@layer global {
+		:root {
+			font-size: clamp(1rem, 0.4rem + 0.8svw, 1.2rem); }
+			
+			body {
+				font-family: var(--font-main); 
+				background-color: --var(--background-color-1);
+				color: var(--foreground-color-2); }
+			
+
+			h1, h2, h3 {
+				font-family: var(--font-heading);
+				color: var(--font-body-color); }
+
+			h1 {
+				font-size: var(--fs-18);
+				font-weight: 500;
+				line-height: 1.5; }
+			h2 {
+				font-size: var(--fs-16);
+				position: absolute;
+				left: 0;
+				bottom: -50px;   }
+			h3 {
+				font-size: var(--fs-16);
+				padding-bottom: 10px; }  
+				
+			ul { list-style-type: none; }
+			
+			a {
+				font-size: var(--link-size); }
+				
+			@media screen and (min-width: 769px) {
+				h1 { font-size: 2.5rem; }
+				h2 { font-size: 1rem; }
+				h3 { font-size: 1.25rem; }}
+}
+
+	@layer modules {
+		footer {
+			position: relative; 
+			margin-inline: auto;
+			padding-inline: 0.25rem;
+			padding-block: 15px;
+			border: 3px solid var(--foreground-color-1);  }
+		
+		/* separates the page links and other content from the legal links */
+		.footer-top {
+
+			.footer-top-sitemap { 
+
+				.footer-top-sitemap ul { }} }
+
+
+		/**/
+		.footer-top-about {
+
+			.footer-top-about ul { }   
+			.footer-top-about li {
+				padding: 10px 5px; }}  
+
+		form {
+			margin: 0 auto;
+			padding-top: 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			position: relative; 
+			list-style: none;        
+			width: 100%; 
+			
+			input[type=text] {
+				border-right: none; 
+				width: 80%;    }
+			input[type=button]  {
+				border-radius: 0 5px 5px 0;
+				background: #CBD2D9; }  			
+			}        
+        
+
+
+		.footer-bottom {
+			padding-top: 25px;
+			border-top: 1px solid #CBD2D9; }
+
+
+
+</style>
+</head>
+
+<body>
+    <h1>Sitemap / About / Newsletter Signup / Legal</h1>
+    
+    
+    <footer>          <!-- new row -->
+        <div class="footer-top">
+            <div class="footer-top-sitemap">  <!-- flex item start  -->
+                <ul>
+                    <li><h3>Site Map Header</h3></li>
+                    <li><a href="">a page link of different size</a></li>
+                    <li><a href="">a page link</a></li>
+                    <li><a href="">a page link of different size</a></li>                                         
+                    <li><a href="">a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><a href="">a page link of different size</a></li>
+                    <li><a href="">a page link</a></li>
+                    <li><a href="">a page link of different size</a></li>                                         
+                    <li><a href="">a page link</a></li>                                         
+                    <li><a href="">a page link</a></li>                                         
+                    <li><a href="">a page link of different size</a></li>
+                    <li><a href="">a page link</a></li>
+                    <li><a href="">a page link of different size</a></li>                                         
+                    <li><a href="">a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><a href="">a page link of different size</a></li>
+                    <li><a href="">a page link</a></li>
+                    <li><a href="">a page link of different size</a></li>                                         
+                    <li><a href="">a page link</a></li>                                         
+                </ul>
+                <ul>
+                    <li><a href="">a page link of different size</a></li>
+                    <li><a href="">a page link</a></li>
+                    <li><a href="">a page link of different size</a></li>                                         
+                    <li><a href="">a page link</a></li>                                         
+                    <li><a href="">a page link of different size</a></li>
+                    <li><a href="">a page link</a></li>
+                    <li><a href="">a page link of different size</a></li>                                         
+                    <li><a href="">a page link</a></li>                                         
+                </ul>
+            </div>
+            <div class="footer-top-about">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                <form>
+                    <input type="text"class="label-attached">
+                    <input type="button" class="background-dark small-rounded-no-left-border" value="Sign Up">
+            </form>    
+            </div>
+        </div>
+        <div class="footer-bottom">
+                <p>exercitation legalese laboris nisi exercitation legalese laboris nisi ut ut</p>
+                <ul>
+                <li><a href="">a page link</a></li>
+                <li><a href="">a page link</a></li>
+                <li><a href="">a page link</a></li>
+                </ul>                                        
+        </div> 
+
+        <h2>Site map / About section / Newsletter sign up / Legal</h2>
+    </footer>          <!-- end of row -->
+
+    
+
+    
+</body>
+</html>        
+        
+        

@@ -1,0 +1,20 @@
+@layer modules.input-soft-background {
+
+	.input-soft-background { 
+	
+		.wrapper {
+			background-color: var(--white);}
+	
+		 input[type="text"] {
+			width: 350px; 
+			max-width: 350px;
+			height: 3.25rem;
+			border: 0;
+			border-radius: var(--size-radius-sm);
+			outline: none; 
+			padding-inline: 20px;
+			background-color: var(--gray-lightest); }
+
+		input[type="text"]:focus {
+			box-shadow: 0px 1px 9px 0px var(--gray-lightest);	 }
+}}

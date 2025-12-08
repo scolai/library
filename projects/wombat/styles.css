@@ -1,0 +1,13 @@
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; }
+	
+page-title {
+	font-family: sans-serif; }
+	
+page-title title {
+	font-family: monospace; }
+
+page-title title h1 {
+	font-family: serif; }

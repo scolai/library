@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library | </title>
+  <link rel="stylesheet" media="screen" href="main.css">
+  <link rel="stylesheet" media="screen" href="normalizer.css">
+<style>
+
+*,
+::before,
+::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+	{ display: block; }
+
+
+body {
+	background-color: var(--value9);
+	height: 100vh; }
+																		/* grid */
+wrapper {
+	font-family: sans-serif; 
+	width: 80vw;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	row-gap: 50px;
+	column-gap: 15px; }
+																		/* grid item height */
+wrapper > * {
+	height: 300px; }
+	
+
+item {
+	position: relative;
+	background-color: #ddd;
+	border: 2px solid #999; }
+	
+	
+h1 {
+	width: 80vw;
+	margin-inline: auto; }
+h2 { 
+	position: absolute; 
+	left: 0;
+	bottom: -30px;
+	font-size: var(--subheading); 
+	font-weight: 400; }		
+	
+ul { list-style-type: none; }
+</style>
+</head>
+<body>
+	<h1>Locations Template</h1>
+	<components>
+		<item>
+		
+			<h2></h2>
+		</item>
+	</components>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/ ... /left-image-wide-link/style.css */
+@layer reset, theme, layout, modules.left-image-with-link.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("left-image-wide-link.css") layer(modules.left-image-wide-link);
+@import url("utilities.css") layer(utilities);

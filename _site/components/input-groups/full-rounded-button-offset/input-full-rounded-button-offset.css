@@ -1,0 +1,56 @@
+@layer modules.input-full-rounded-button-offset {
+
+	.input-full-rounded-button-offset .wrapper {
+		height: 100vh;
+		width: 100%; }
+
+	.input-wrapper {
+		position: relative;  }
+
+	.input-wrapper input[type="text"] {
+		height: 2.5rem;
+		width: 350px; 
+		max-width: 350px;
+		border: 0;
+		box-shadow: 0 -1px 0px 0px var(--gray-lighter) inset, 0 1px 0px 0px var(--gray-lighter) inset, 1px 0px 0px 0px var(--gray-lighter) inset, -1px 0px 0px 0px var(--gray-lighter) inset;
+		border-start-start-radius: var(--size-radius-full);
+		border-start-end-radius: 3px;
+		border-end-start-radius: var(--size-radius-full);
+		border-end-start-radius: var(--size-radius-full);
+		border-end-end-radius: 3px;
+		outline: none; 
+		padding-inline: 1rem;
+		padding-inline-end: 100px;
+		background-color: var(--white); }
+
+	.input-wrapper input[type="text"]:focus {
+		background-color: var(--gray-lighter); 
+		border-color: var(--gray-darker); }
+		
+	.input-wrapper .input-label {
+		position: absolute;
+		top: -65%;
+		left: 0.5rem;
+		font-family: var(--font-sans);
+		font-size: var(--label);
+		color: var(--dark); }
+	.input-wrapper .input-button {
+		position: absolute;
+		top: -10%;
+		right: -10%;
+		border: none;
+		border-start-end-radius: 30px;
+		border-start-start-radius: 30px;
+		border-end-start-radius: 30px;
+		border-end-end-radius: 30px;
+		line-height: 1.5;
+		padding-block: 0.75rem; 
+		padding-inline: 1.75rem;
+		background-color: var(--gray-darker);
+		color: var(--gray-lightest);
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);		
+		cursor: pointer; 
+		letter-spacing: 0.075rem;
+		word-spacing: 0.025rem; }
+}

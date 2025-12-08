@@ -1,0 +1,8 @@
+/* /home/blue/webace/library/components/sign_in_forms/two-pane_testimonial/style.css */
+@layer reset, theme, layout, modules.form-two-pane_testimonial, utilities;
+
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("form-two-pane-testimonial.css") layer(modules.form-two-pane-testimonial);
+@import url("utilities.css") layer(utilities);

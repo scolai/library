@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Duo flex-item Template</title>
+
+<style>
+    body {
+        font-family: Arial;
+        margin: 30px;
+        padding: 50px 0;  }
+    #page_header {
+        font-family: "PT Sans"; 
+        font-size: 48px;
+        font-weight: 200;
+        margin: 130px;
+        line-height: 48px; }
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 25px 0; }    
+    .flex-item-one {
+        height: 300px;
+        margin: 10px 2.5px;
+        flex-basis: 100%;
+        background: #98AEEB;
+        border: 2px dashed pink; }
+    ul {
+        border: 2px dashed blue;
+        height: 100%;
+        margin: auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none; }
+    li {
+        width: 150px;
+        text-align: center;
+        border: 2px solid black;
+        padding: 10px 5px;
+        margin: 5px 15px;
+        background: yellow; }
+    p {
+        margin: 5px 0;}
+  
+</style>
+</head>
+
+<body>
+    <h1 id="page_header">[COMPONENT NAME]</h1>
+    
+    <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <div>
+            </div>
+            <p>listlistlistlist</p>
+        </div> 
+    </div>          <!-- end of row -->
+    
+    
+    <div id="wrapper">          <!-- new row -->
+
+            <p>listlistlistlist</p>
+        </div> 
+    </div>          <!-- end of row -->
+    
+    
+    
+     <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+
+            <p>listlistlistlist</p>
+        </div> 
+    </div>          <!-- end of row -->
+    
+</body>
+</html>

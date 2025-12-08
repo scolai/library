@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Component Gallery - Inputs</title>
+
+<style>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+	    display: block;
+    }
+    body {
+	    line-height: 1;
+    }
+    ol, ul {
+	    list-style: none;
+    }
+    blockquote, q {
+	    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+	    content: '';
+	    content: none;
+    }
+    table {
+	    border-collapse: collapse;
+	    border-spacing: 0;
+    }
+    body {
+        font-family: Arial;
+        margin: 30px;
+        padding: 50px 150px;  }
+    #page_header {
+        font-family: "PT Sans"; 
+        font-size: 78px;
+        font-weight: 200;
+        margin: 50px 25px;
+        line-height: 78px; }
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 25px 0; }    
+    .flex-item-one, .flex-item-two {
+        height: 250px;
+        margin: 10px 2.5px;
+        flex-basis: 50%;
+        background: #F0F4F8;
+        border: 3px solid #829AB1; }
+    ul {
+        height: 100%;
+        margin: auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none; }
+    .defaultinputcontainer {
+
+        border: 3px solid orange;}
+    input {
+        width: 300px;
+        height: 20px;
+        padding: 10px 5px;
+        margin: 5px 15px;
+        text-align: default;
+        border: 2px solid #D9E2EC; 
+        font-size: 16px; 
+        }
+    input::placeholder {
+        font-family: "Helvetica";
+        font-weight: 200;
+        opacity: 0.8;
+        color: #829AB1; }
+    .labelinputcontainer {
+        padding: 3px;
+        border: 2px solid #D9E2EC; }
+    .labelinputcontainer > input {
+        display: block;
+        outline: none;
+        border: none;
+        line-height: 1.0em;
+        font-size: 14pt; }
+    .labelinputcontainer > label {
+        display: block;
+        font-size: 32px;
+        color: blue; }
+    .smallrounded {
+        border-radius: 5px; }
+    .fullrounded {
+        border-radius: 50px;}
+    .largerounded {
+        border-radius: 10px;}
+    .thickborder {
+        border: 3.5px solid #D9E2EC;}
+    .borderless {
+        border: 0;}
+    .insetshadow {
+        box-shadow: inset 0.02em 0.02em 0.4em #D9E2EC; }
+    .boxshadow {
+        box-shadow: -0.4em 0.2em 0.4em #D9E2EC; }
+    .bottomborder {
+        box-shadow: 0 0.2em #BCCCDC; }
+    .softbackground {
+        background: #ffffff; }
+    .inputsoftbackground {
+        background: #F0F4F8; }
+    .overlappinglabelcontainer {
+        position: relative; }
+    .overlappinglabel {
+        position: absolute;
+        top: 92px;
+        left: 155px;
+        padding: 5px 10px;
+        background: #ffffff;
+        font-weight: 200px;
+        font-size: 14px; }
+    .labelinsideinputcontainer {
+        position: relative; }
+    .labelinsideinput {
+        position: absolute;
+        top: 103px;
+        left: 156px;
+        font-weight: 200px;
+        font-size: 12px;
+        font-family: arial; }
+    .inputlabelplaceholder {
+        padding-top: 30px;
+        padding-bottom: 2px;}
+    .smalluppercaselabelcontainer {
+        position: relative; }
+    .smalluppercaselabel {
+        position: absolute;
+        top: -20px;
+        left: 15px;
+        font-weight: 200px;
+        font-size: 16px;
+        font-family: arial;
+        font-variant: small-caps; }
+     .iconinsideinput-container {
+        position: relative; }
+     .iconinsideinput {
+        position: absolute;
+        top: 103px;
+        left: 156px;
+        font-weight: 200px; }
+     .bordered-icon-input- {}
+     .emphasized-icon-input- {}
+    p {
+        margin: 5px 0;}
+  
+</style>
+</head>
+
+<body>
+    <h1 id="page_header">[COMPONENT]</h1>
+    
+    <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li><input type="" class="" ></li>
+            </ul>
+            <p>[Description]</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul>        
+                <li><input type="text" class="" ></li>
+            </ul>
+            <p>Full rounded</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+    <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li><input type="text" class="largerounded" ></li>
+            </ul>
+            <p>Large rounded</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul>        
+                <li><input type="text" class="square" ></li>
+            </ul>
+            <p>Square</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+    <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li><input type="text" class="smallrounded thickborder" ></li>
+            </ul>
+            <p>Thick border</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul>        
+                <li><input type="text" class="borderless smallrounded" ></li>
+            </ul>
+            <p>No border</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+        <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li><input type="text" class="insetshadow smallrounded" ></li>
+            </ul>
+            <p>Inset shadow</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul>        
+                <li><input type="text" class="boxshadow smallrounded" ></li>
+            </ul>
+            <p>Box shadow</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+        <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li><input type="text" class="bottomborder" ></li>
+            </ul>
+            <p>Bottom border</p>
+        </div> 
+
+        <div class="flex-item-two softbackground">
+            <ul>        
+                <li><input type="text" class="inputsoftbackground smallrounded" ></li>
+            </ul>
+            <p>Soft background</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+        
+    <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one softbackground">
+            <ul>        
+                <li><input type="text" class="inputsoftbackground bottomborder" ></li>
+            </ul>
+            <p>Soft background with bottom border</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul>        
+                <li><input type="text" placeholder="Placeholder" class="borderless bottomborder inputsoftbackground"></li>
+            </ul>
+            <p>Bottom border only with placeholder label</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+    <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul class="labelinsideinputcontainer">        
+                <label for="earth" class="labelinsideinput">Label</label> 
+                <li><input type="text" placeholder="Placeholder" name="earth" class="smallrounded inputlabelplaceholder"></li>
+            </ul>
+            <p>Label inside input</p>
+        </div> 
+
+        <div class="flex-item-two softbackground">
+            <ul class="overlappinglabelcontainer">
+                <label for="overlappedinput" class="overlappinglabel">Label</label>
+                <li><input type="text" name="overlappedinput" class="smallrounded thickborder  " ></li>
+            </ul>
+            <p>Overlapping label</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+    <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li class="smalluppercaselabelcontainer"><input type="text" class="smallrounded" ><label for="bob" class="smalluppercaselabel">Label</label></li>
+            </ul>
+            <p>Small uppercase label</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul class="iconinsideinput-container">        
+                <li class="iconinside-input"><input type="text" class="smallrounded" ></li>
+            </ul>
+            <p>With icon</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+        <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li><div class="iconcontainer-input"></div><input type="text" class="smallrounded" ></li>
+            </ul>
+            <p>With icon with border</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul>        
+                <li><input type="text" class="smallrounded"></li>
+            </ul>
+            <p>Icon emphasized</p>            
+        </div>
+    </div>          <!-- end of row -->
+    
+    
+        <div id="wrapper">          <!-- new row -->
+        <div class="flex-item-one">
+            <ul>        
+                <li><input type="text" class="smallrounded" ></li>
+            </ul>
+            <p>Connected inputs with inset labels</p>
+        </div> 
+
+        <div class="flex-item-two">
+            <ul>        
+                <li><input type="text" class="smallrounded" ></li>
+            </ul>
+            <p>Connected inputs with placeholder only</p>            
+        </div>
+    </div>          <!-- end of row -->
+</body>
+</html>

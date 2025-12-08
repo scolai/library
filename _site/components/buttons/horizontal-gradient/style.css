@@ -1,0 +1,8 @@
+/* /home/blue/webace/library/components/buttons/horizontal-gradient/style.css */
+@layer reset, theme, layout, modules.btn-horizontal-gradient, utilities;
+
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("btn-horizontal-gradient.css") layer(modules.btn-horizontal-gradient);
+@import url("utilities.css") layer(utilities);
