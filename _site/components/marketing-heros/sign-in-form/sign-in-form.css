@@ -1,7 +1,5 @@
 @layer modules.sign-in-form  {
-
 .sign-in-form {
-
 	.wrapper { background-color: var(--gray-lightest); }
 
 	.hero-wrapper {
@@ -9,18 +7,17 @@
 		flex-direction: column;
 		align-items: center;
 		
-		@media screen and (min-width: 769px) { 
+		@media screen and (width >= 769px) { 
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			column-gap: 10px;
-			align-items: space-between;
 			width: 95vw;
 			margin-inline: auto; }}
 	
 	.hero-wrapper > * + * {
 		margin-block-start: 50px;
 		
-		@media screen and (min-width: 769px) {
+		@media screen and (width >= 769px) {
 			margin-block-end: 0;
 			margin-inline-start: 60px; }}
 
@@ -43,12 +40,15 @@
 		font-size: var(--font-size-heading); 
 		font-family: var(--font-family-heading);
 		color: var(--gray-darker); }
+
 	.form-body {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start; }
+
 	.form-body > * + * {
 		margin-block-start: 20px; }
+
 	.field-wrapper > * + * {
 		margin-block-start: 20px; }
 	
@@ -67,7 +67,7 @@
 		background-color: var(--white); }
 
 	input[type="text"]:focus {
-		box-shadow: 0px 1px 9px 0px var(--gray-lighter);}
+		box-shadow: 0 1px 9px 0 var(--gray-lighter);}
 
 	.input-label + input {
 		margin-block-start: var(--gap-xs); }	
@@ -76,8 +76,10 @@
 	.checkbox-wrapper * {
 		display: inline; 
 		vertical-align: middle; }
+
 	.button-wrapper {
 		width: 100%; }
+
 	.button {
 		display: block;
 		width: 100%;	
@@ -89,25 +91,28 @@
 		padding-block: 10px;
 		border-radius: 5px; 
 		outline: none; }
+
 	.button:focus {
-		box-shadow: 0px 1px 9px 0px var(--gray-lighter);}
+		box-shadow: 0 1px 9px 0 var(--gray-lighter);}
+
 	.button:hover {
 		background-color: var(--gray-lightest);
 		color: var(--gray-darkest); 
 		cursor: pointer; }
+
 	.button:active {
 		background-color: var(--black);
 		color: var(--gray-lightest); }
+
 	.form-footer p {
 		font-family: var(--font-family-body);
 		font-size: var(--font-size-caption);
 		color: var(--gray); }			
-			
-			
+				
 	.body { 
 		width: 100%;
 		
-		@media screen and (min-width: 769px) {
+		@media screen and (width >= 769px) {
 			order: unset;
 			display: flex;
 			flex-direction: column;}}
@@ -115,7 +120,7 @@
 	.body > * + * {
 		margin-block-start: 45px;
 		
-		@media screen and (min-width: 769px) {
+		@media screen and (width >= 769px) {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start; }}
@@ -127,7 +132,7 @@
 		width: 100%;
 		max-width: 600px;
 		
-		@media screen and (min-width: 769px) {
+		@media screen and (width >= 769px) {
 			align-items: flex-start;
 			max-width: 100%;
 			margin-inline: auto; }}
@@ -135,28 +140,27 @@
 	.hero-header > * + * {
 		margin-block-start: 15px; }
 	
-	.title + .subtitle {
-		margin-block-start: 30px; }
-	
-	.title {
-		max-width: 95%;
-		@media screen and (min-width: 769px) {
-			max-width: 100%;
-			font-size: var(--font-size-heading);
-			text-align: left; }}
-			
 	.subtitle {
 		text-align: left;
 		max-width: 90%; 		
 		font-size: var(--font-size-subheading); 
 		font-family: var(--font-family-subheading);
 					
-			
-		@media screen and (min-width: 769px) {
+		@media screen and (width >= 769px) {
 			max-width: 100%;
 			text-align: left;
 			font-size: var(--font-size-subheading); 
 			font-family: var(--font-family-subheading); }}
-			
 
+	.title + .subtitle {
+		margin-block-start: 30px; }
+	
+	.title {
+		max-width: 95%;
+
+		@media screen and (width >= 769px) {
+			max-width: 100%;
+			font-size: var(--font-size-heading);
+			text-align: left; }}
+}
 }

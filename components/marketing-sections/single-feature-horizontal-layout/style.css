@@ -1,7 +1,7 @@
-/* /home/blue/webace/library/components/ ... / ... /style.css */
-@layer reset, theme, layout, modules.  ... , utilities;
+/* /home/blue/webace/library/components/marketing-sections/single-feature-horizontal-layout/style.css */
+@layer reset, theme, layout, modules.single-feature-horizontal-layout.css, utilities;
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);
 @import url("layout.css") layer(layout);
-@import url(" ...  .css") layer(modules.  ... );
+@import url("single-feature-horizontal-layout.css") layer(modules.single-feature-horizontal-layout);
 @import url("utilities.css") layer(utilities);

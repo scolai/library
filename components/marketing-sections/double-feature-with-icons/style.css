@@ -1,4 +1,4 @@
-/* /home/blue/webace/library/components/marketing-heros/double-feature-with-icons/style.css */
+/* /home/blue/webace/library/components/marketing-sections/double-feature-with-icons/style.css */
 @layer reset, theme, layout, modules.double-feature-with-icons.css, utilities;
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

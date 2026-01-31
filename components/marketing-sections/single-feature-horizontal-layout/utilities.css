@@ -13,6 +13,9 @@
 	.block {
 		display: block; }
 
+	/* text spacing */
+	--no-break: var(--no-break);
+
 	/* tight spacing */
 	--tracking-normal: var(--spacing-tight-normal);
 	--tracking-sm: var(--spacing-tight-sm);

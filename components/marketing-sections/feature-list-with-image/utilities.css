@@ -12,14 +12,29 @@
 		
 	.block {
 		display: block; }
+		
+	.button-text {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-lightest);
+		background-color: var(--gray-darkest); 
+		letter-spacing: var(--tracking-xl);
+		text-transform: uppercase; }
 
-	/* tight spacing */
+	/* typography 	
+	--font-size-body: var(--size-font-16);
+	--font-size-heading: var(--size-font-24);
+	--font-size-label: var(--size-font-14);
+	--font-size-caption: var(--size-font-12);
+	--font-size-button: var(--size-font-label);
+*/
+	/* spacing */
 	--tracking-normal: var(--spacing-tight-normal);
 	--tracking-sm: var(--spacing-tight-sm);
 	--tracking-md: var(--spacing-tight-md);
 	--tracking-lg: var(--spacing-tight-lg);
 	--tracking-xl: var(--spacing-tight-xl);
-	/* normal spacing */
+	
 	--gap-xs: var(--size-space-8);
 	--gap-sm: var(--size-space-16);
 	--gap-md: var(--size-space-32);

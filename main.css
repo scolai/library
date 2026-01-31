@@ -54,6 +54,8 @@
 	--font-weight-800: 800;
 	--font-weight-900: 900;
 
+	/* Text */
+	--no-break: nowrap;
 
 	/* Spacing */
 	--size-space-4: 4px;

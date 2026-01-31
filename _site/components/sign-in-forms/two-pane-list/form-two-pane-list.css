@@ -111,12 +111,8 @@
 		background-image: url("/images/image.png"); 
 		background-color: var(--gray);
 		border-radius: var(--size-radius-circle); }
+
 	
-	
-	.content-wrapper > * + * {
-		margin-block-start: 10px; }
-	
-	.form-wrapper {}
 	.form > * {
 		display: flex;
 		flex-direction: column;
@@ -254,7 +250,10 @@
 	.copy-side header h2 {
 		font-family: var(--font-family-heading);
 		font-size: var(--font-size-heading);}
-		
+	
+	.content-wrapper > * + * {
+		margin-block-start: 10px; }
+	
 	.item-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 75%;

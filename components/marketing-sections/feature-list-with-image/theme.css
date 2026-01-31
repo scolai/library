@@ -1,7 +1,7 @@
 @import url("/main.css");
 @layer theme {
 	:root {
-		--black: var(--black);
+		--black: #000;
 		--gray-darkest: var(--gray-200);
 		--gray-darker: var(--gray-300);
 		--gray-dark: var(--gray-400);
@@ -9,8 +9,8 @@
 		--gray-light: var(--gray-700);
 		--gray-lighter: var(--gray-800);
 		--gray-lightest: var(--gray-900);
-		--gray-blue-lightest: var(--gray-950);
-		--white: var(--white);
+		--white: #fff;
+		--clear: var(--transparent);
 		
 		/* font family */
 		--font-family-caption: var(--font-serif);
@@ -18,6 +18,7 @@
 		--font-family-body: var(--font-serif);
 		--font-family-subheading: var(--font-sans);
 		--font-family-heading: var(--font-sans);
+		--font-family-button: var(--font-sans);
 
 		/* font size */
 		--font-size-caption: var(--size-font-12);
@@ -25,12 +26,11 @@
 		--font-size-body: var(--size-font-16);
 		--font-size-subheading: var(--size-font-20);
 		--font-size-heading: var(--size-font-24);
+		--font-size-button: var(--size-font-16);
 		
 		/* radius or transitions */
 		--radius-default: var(--size-radius-md);
-	}
-	
-	
-	.wrapper {
-		background-color: var(--gray-lightest); }
+		
+		--gap-xs: var(--size-space-8); }
 }
+	
