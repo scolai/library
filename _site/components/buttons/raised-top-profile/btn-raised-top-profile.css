@@ -3,10 +3,10 @@
 /* actual component wrapper, scope level */
 .btn-raised-top-profile {
 
-	.wrapper {
+	.btn-raised-top-profile__wrapper {
 		background-color: var(--white);}
 		
-	.wrapper > * + * {
+	.btn-raised-top-profile__wrapper > * + * {
 		margin-block-start: 30px; }
 
 	.btn-wrapper {

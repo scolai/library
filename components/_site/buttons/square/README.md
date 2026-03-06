@@ -1,4 +1,5 @@
 Component name
+Square button
 
 purpose
 

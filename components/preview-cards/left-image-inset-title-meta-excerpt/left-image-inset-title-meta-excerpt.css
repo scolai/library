@@ -2,7 +2,7 @@
 
 .left-image-inset-title-meta-excerpt {
 
-	.wrapper { background-color: var(--gray-lightest); }
+	.left-image-inset-title-meta-excerpt__wrapper { background-color: var(--gray-lightest); }
 
 	.card {
 		display: flex;

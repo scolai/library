@@ -1,5 +1,5 @@
 /* /home/blue/webace/library/components/buttons/full-rounded/style.css */
-@layer reset, theme, layout, modules.btn-full-rounded, utilities;
+@layer reset, theme, layout, modules.btn-full-rounded.css, utilities;
 
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

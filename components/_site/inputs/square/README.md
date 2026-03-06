@@ -1,7 +1,9 @@
 <!-- /home/blue/webace/library/components/inputs/square/README.md -->
 Component name
+Square
 
 purpose
+Input textbox
 
 tags
 

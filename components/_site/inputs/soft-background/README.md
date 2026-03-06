@@ -1,7 +1,9 @@
-<!-- /home/blue/webace/library/components/inputs/soft-background/README.md -->
+<!-- /home/blue/webace/library/components/inputs/small_rounded/README.md -->
 Component name
+Soft background
 
 purpose
+Input textbox
 
 tags
 

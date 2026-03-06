@@ -1,9 +1,1 @@
-@layer layout {
-
-	.wrapper {
-		height: 100vh; 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center; }
-}
+@layer layout {}

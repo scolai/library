@@ -1,5 +1,5 @@
-<!-- /home/blue/webace/library/components/buttons/vertical-gradient/README.md -->
 Component name
+Button with vertical gradient
 
 purpose
 

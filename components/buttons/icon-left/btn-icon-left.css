@@ -3,10 +3,10 @@
 /* actual component wrapper, scope level */
 .btn-icon-left {
 
-	.wrapper {
+	.btn-icon-left__wrapper {
 		background-color: var(--white);}
 		
-	.wrapper > * + * {
+	.btn-icon-left__wrapper > * + * {
 		margin-block-start: 30px; }
 
 	.btn-wrapper {

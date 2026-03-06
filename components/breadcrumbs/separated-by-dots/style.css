@@ -1,7 +1,7 @@
-/* /home/blue/webace/library/components/ ... / ... /style.css */
-@layer reset, theme, layout, modules.  ... , utilities;
+/* /home/blue/webace/library/components/vertical-navigation/separated-by-dots/style.css */
+@layer reset, theme, layout, modules.separated-by-dots.css, utilities;
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);
 @import url("layout.css") layer(layout);
-@import url(" ...  .css") layer(modules.  ... );
+@import url("separated-by-dots.css") layer(modules.separated-by-dots);
 @import url("utilities.css") layer(utilities);

@@ -1,31 +1,8 @@
 /* /home/blue/webace/library/components/inputs/borderless/style.css */
-	@layer reset {
-		*,
-		*::before,
-		*::after { box-sizing: border-box; }
-		
-		body {
-			margin: unset; padding: unset; }
 
-		button,
-		input,
-		textarea,
-		select { font: inherit; }
-		
-		img,
-		picture,
-		svg,
-		canvas {
-			display: block;
-			max-inline-size: 100%; 
-			height: auto; }
-			
-		@media (prefers-reduced-motion: reduce) {
-			*,
-			*::before,
-			*::after {
-				animation-duration: 0.01ms !important;
-				animation-iteration-count: 1 !important;
-				transition-duration: 0.01ms !important;
-				scroll-behavior: auto !important; }}}
-
+@layer reset, theme, layout, modules.input-borderless, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("input-borderless.css") layer(modules.input-borderless);
+@import url("utilities.css") layer(utilities);

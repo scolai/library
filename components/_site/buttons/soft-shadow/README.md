@@ -1,5 +1,5 @@
-<!-- /home/blue/webace/library/components/buttons/soft-shadow/README.md -->
 Component name
+Button with soft shadow
 
 purpose
 

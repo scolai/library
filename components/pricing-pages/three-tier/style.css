@@ -1,4 +1,4 @@
-/* /home/blue/webace/library/components/ ... /three-tier/style.css */
+/* /home/blue/webace/library/components/pricing-pages/three-tier/style.css */
 @layer reset, theme, layout, modules.three-tier.css, utilities;
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

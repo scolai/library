@@ -1,7 +1,7 @@
-/* /home/blue/webace/library/components/ ... / ... /style.css */
-@layer reset, theme, layout, modules.  ... , utilities;
+/* /home/blue/webace/library/components/pricing-pages/horizontal-single-tier/style.css */
+@layer reset, theme, layout, modules.horizontal-single-tier.css, utilities;
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);
 @import url("layout.css") layer(layout);
-@import url(" ...  .css") layer(modules.  ... );
+@import url("horizontal-single-tier.css") layer(modules.horizontal-single-tier);
 @import url("utilities.css") layer(utilities);

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modals | Full width with split buttons</title>
+  <link rel="stylesheet" media="screen" href="style.css">
+<style>
+</style>
+</head>
+<body class="modal-body">
+	<div class="mdl-full-w-split-btns">
+
+		<header class="mdl-full-w-split-btns__top-banner">
+			<div class="mdl-full-w-split-btns__top-banner-inner">
+				<p>Find out what's going on at Wombat Coffee each month. Sign up for our newsletter:
+					<button id="open" type="button">Sign up</button>
+				</p>
+			</div>
+		</header>
+		<div class="mdl-full-w-split-btns__modal" id="modal" role="dialog" aria-modal="true">
+			<div class="mdl-full-w-split-btns__backdrop"></div>
+			<div class="mdl-full-w-split-btns__body">
+				<button class="modal-close" id="close" type="button">close</button>
+				<h2 class="mdl-full-w-split-btns__title">Wombat Newsletter</h2>
+				<p class="mdl-full-w-split-btns__info">I'm baby sustainable whatever neutra flexitarian freegan. Chambray meggings trust fund, selvage shoreditch meditation cliche green juice salvia pour-over readymade kinfolk. Raw denim man bun. I'm baby sustainable whatever neutra flexitarian freegan. Chambray meggings trust fund, selvage shoreditch meditation cliche green juice salvia pour-over readymade kinfolk. Raw denim man bun.</p>
+				<form class="mdl-full-w-split-btns__form">
+
+						<div class="label-container">
+							<label class="mdl-full-w-split-btns__label" for="email">Email address</label>
+							<input class="mdl-full-w-split-btns__text-input" type="text" name="email"/>
+            			</div>
+            			<button class="mdl-full-w-split-btns__submit" type="submit">Sign up</button>
+
+				</form>
+			</div> <!-- /.modal-body -->
+		</div> <!-- /.modal -->
+		<main class="container">
+			<div class="col-main">
+				<nav>
+					<div class="dropdown" id="dropdown">
+						<button type="button" class="dropdown-toggle" id="dropdown-toggle">Main Menu</button>
+						<div class="dropdown-menu">
+							<ul class="submenu">
+								<li><a href="/">Home</a></li>
+								<li><a href="/coffees">Coffees</a></li>
+								<li><a href="/brewers">Brewers</a></li>
+								<li><a href="/specials">Specials</a></li>
+								<li><a href="/about">About us</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<h1>Wombat Coffee Roasters</h1>
+			</div>
+
+			<aside class="col-sidebar">
+				<div class="affix">
+					<ul class="submenu">
+						<li><a href="/">Home</a></li>
+						<li><a href="/coffees">Coffees</a></li>
+						<li><a href="/brewers">Brewers</a></li>
+						<li><a href="/specials">Specials</a></li>
+						<li><a href="/about-us">About us</a></li>
+					</ul>
+				</div>
+			</aside>
+		</main>
+
+	<script type="text/javascript">
+		const button = document.getElementById('open');
+		const close = document.getElementById('close');
+		const modal = document.getElementById('modal');
+
+			button.addEventListener('click', function(event) {
+				modal.classList.add('is-open');
+				document.body.classList.add("no-scroll");
+			});
+
+		close.addEventListener('click', function (event) {
+			modal.classList.remove('is-open');
+			document.body.classList.remove("no-scroll");
+		});
+
+		const dropdownToggle = document.getElementById("dropdown-toggle");
+		const dropdown = document.getElementById("dropdown");
+
+		dropdownToggle.addEventListener("click", function (event) {
+			dropdown.classList.toggle("is-open");
+		});
+	</script>
+	</div>
+</body>
+</html>

@@ -1,7 +1,9 @@
 <!-- /home/blue/webace/library/components/inputs/inset-shadow/README.md -->
 Component name
+Inset shadow
 
 purpose
+Input textbox
 
 tags
 

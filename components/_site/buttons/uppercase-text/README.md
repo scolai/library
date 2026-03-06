@@ -1,5 +1,5 @@
-<!-- /home/blue/webace/library/components/buttons/uppercase-text/README.md -->
 Component name
+Button with uppercase text
 
 purpose
 

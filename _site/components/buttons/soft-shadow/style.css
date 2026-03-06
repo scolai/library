@@ -1,5 +1,5 @@
 /* /home/blue/webace/library/components/buttons/soft-shadow/style.css */
-@layer reset, theme, layout, modules.btn-soft-shadow, utilities;
+@layer reset, theme, layout, modules.btn-soft-shadow.css, utilities;
 
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

@@ -3,10 +3,10 @@
 /* actual component wrapper, scope level */
 .btn-soft-shadow {
 
-	.wrapper {
+	.btn-soft-shadow__wrapper {
 		background-color: var(--white);}
 		
-	.wrapper > * + * {
+	.btn-soft-shadow__wrapper > * + * {
 		margin-block-start: 30px; }
 
 	.btn-wrapper {

@@ -3,10 +3,10 @@
 /* actual component wrapper, scope level */
 .btn-small-rounded {
 
-	.wrapper {
+	.btn-small-rounded__wrapper {
 		background-color: var(--white);}
 		
-	.wrapper > * + * {
+	.btn-small-rounded__wrapper > * + * {
 		margin-block-start: 30px; }
 	
 	.btn--primary {

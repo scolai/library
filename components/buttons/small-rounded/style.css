@@ -1,5 +1,5 @@
 /* /home/blue/webace/library/components/buttons/small-rounded/style.css */
-@layer reset, theme, layout, modules.btn-small-rounded, utilities;
+@layer reset, theme, layout, modules.btn-small-rounded.css, utilities;
 
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

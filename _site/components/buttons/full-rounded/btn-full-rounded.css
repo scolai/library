@@ -3,10 +3,10 @@
 /* actual component wrapper, scope level */
 .btn-full-rounded {
 
-	.wrapper {
+	.btn-full-rounded__wrapper {
 		background-color: var(--white);}
 		
-	.wrapper > * + * {
+	.btn-full-rounded__wrapper > * + * {
 		margin-block-start: 30px; }
 	
 	.btn--primary {

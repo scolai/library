@@ -2,7 +2,7 @@
 
 .two-tier-emphasized-plan {
 
-	.wrapper {}
+	.two-tier-emphasized-plan__wrapper {}
 
 	.two-card-wrapper {
 
@@ -121,4 +121,5 @@
 
 
 
+}
 }

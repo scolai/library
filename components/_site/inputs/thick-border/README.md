@@ -1,7 +1,9 @@
-<!-- /home/blue/webace/library/components/inputs/thick-border/README.md -->
+<!-- /home/blue/webace/library/components/inputs/small_rounded/README.md -->
 Component name
+Thick border
 
 purpose
+Input textbox
 
 tags
 

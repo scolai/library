@@ -1,0 +1,66 @@
+@layer modules.separated-by-chevrons  {
+
+.separated-by-chevrons {
+
+	/* make page white */
+	.separated-by-chevrons__wrapper { 
+		background-color: var(--white);
+		height: 100vh; 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; }
+
+	/* display list of items as a centered column on small screens, aligned left */
+	.separated-by-chevrons__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		list-style-type: none;
+		width: 90%;
+		max-width: 350px;
+		margin-inline: auto;
+		padding-inline: unset; 
+		
+		/* format links as horizontal navigation tabs, spaced evenly */
+		@media screen and (min-width: 415px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);}}
+	
+	.separated-by-chevrons__item {
+		border: 2px solid var(--gray);
+		
+		
+		@media screen and (min-width: 415px) {
+			/* on larger screens center cell items */
+			display: flex;
+			justify-content: center; 
+			
+			/* and remove border */
+			border: 0; 	 }}
+	
+	.separated-by-chevrons__list > * + * {
+
+		@media screen and (min-width: 700px) {
+		margin-inline-start: 30px; 
+		margin-block-start: unset; }}
+
+	.separated-by-chevrons__icon {
+		height: 1.25rem;
+		width: 1rem;
+		background-color: var(--white);
+		color: var(--black);
+		mask-image: url('data:image/svg+xml,%3Csvg version='1.1' id='Chevron_thin_right' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E
+%3Cpath d='M13.25,10L6.109,2.58c-0.268-0.27-0.268-0.707,0-0.979c0.268-0.27,0.701-0.27,0.969,0l7.83,7.908  c0.268,0.271,0.268,0.709,0,0.979l-7.83,7.908c-0.268,0.271-0.701,0.27-0.969,0c-0.268-0.269-0.268-0.707,0-0.979L13.25,10z' fill='%23000000'/%3E
+%3C/svg%3E');
+		-webkit-mask-image: url('data:image/svg+xml,%3Csvg version='1.1' id='Chevron_thin_right' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E
+%3Cpath d='M13.25,10L6.109,2.58c-0.268-0.27-0.268-0.707,0-0.979c0.268-0.27,0.701-0.27,0.969,0l7.83,7.908  c0.268,0.271,0.268,0.709,0,0.979l-7.83,7.908c-0.268,0.271-0.701,0.27-0.969,0c-0.268-0.269-0.268-0.707,0-0.979L13.25,10z' fill='%23000000'/%3E
+%3C/svg%3E');
+		mask-repeat: no-repeat;
+		mask-position: center;
+		mask-size: contain;
+		mask-type: alpha;
+		-webkit-mask-type: alpha;		
+	}
+}
+}

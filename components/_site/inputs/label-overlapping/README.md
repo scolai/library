@@ -1,7 +1,9 @@
 <!-- /home/blue/webace/library/components/inputs/label-overlapping/README.md -->
 Component name
+Label overlapping
 
 purpose
+Input textbox
 
 tags
 

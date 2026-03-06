@@ -1,5 +1,5 @@
-<!-- /home/blue/webace/library/components/buttons/horizontal-gradient/README.md -->
 Component name
+Button with horizontal gradient
 
 purpose
 

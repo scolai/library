@@ -1,67 +1,7 @@
-/* /home/blue/webace/library/components/sign_in_forms/simple/style.css */
-@layer reset, theme, global, layout, modules, utilities
-
-@layer reset {
-	*,
-	*::before,
-	*::after { box-sizing: border-box; }
-	
-	body {	margin: unset; padding: unset; }
-	button,
-	input,
-	textarea,
-	select { font: inherit; }
-		
-	img,
-	picture,
-	svg,
-	canvas {
-		display: block;
-		max-inline-size: 100%; 
-		height: auto; }
-			
-	@media (prefers-reduced-motion: reduce) {
-		*,
-		*::before,
-		*::after {
-			animation-duration: 0.01ms !important;
-			animation-iteration-count: 1 !important;
-			transition-duration: 0.01ms !important;
-			scroll-behavior: auto !important; }}}
-
-
-@layer theme {
-	:root {
-		--background-light: var(--n-800);
-		--background-dark: var(--n-200);
-
-	}
-}
-
-
-
-		
-@layer global {}
-
-
-
-
-@layer layout {
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center; 
-		height: 100vh; }
-
-}
-
-
-
-
-@layer modules {
-	body {
-		background-color: var(--background-light); }
-
-}
-
-@layer utilities {}
+/* /home/blue/webace/library/components/ ... / ... /style.css */
+@layer reset, theme, layout, modules.  ... , utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url(" ...  .css") layer(modules.  ... );
+@import url("utilities.css") layer(utilities);

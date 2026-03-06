@@ -3,10 +3,10 @@
 /* actual component wrapper, scope level */
 .btn-vertical-gradient {
 
-	.wrapper {
+	.btn-vertical-gradient__wrapper {
 		background-color: var(--white);}
 		
-	.wrapper > * + * {
+	.btn-vertical-gradient__wrapper > * + * {
 		margin-block-start: 30px; }
 
 	.btn-wrapper {

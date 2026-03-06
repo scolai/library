@@ -2,86 +2,74 @@
 
 .two-tier {
 
-	.wrapper {}
-
 	.two-card-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1rem;
+		max-inline-size: 900px;
+		margin-inline: auto;
+	}
 
-		@media screen and (min-width: 500px) {
-			display: flex;
-			justify-content: center;
-			width: 100%;}
-		}
-
-	.two-card-wrapper > * + * {
-		margin-block-start: 30px;
-		
-		@media screen and (min-width: 500px) {
-			margin-block-start: 0;
-			margin-inline-start: 15px;}}
-
-	.card {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 300px;
-		max-width: var(--card-max-width-sm);}
+	.two-tier-card {
+		display: grid;
+		gap: 0;
+		grid-row: span 3;
+		grid-template-rows: max-content auto max-content;
+		grid-template-rows: subgrid;
+		padding: 1rem;
+		max-width: 300px;
+	}
 			
-	.card-visual {
+	.two-tier-card-visual {
 		background-color: var(--white);
 		border: 2px solid var(--gray);
-		border-radius: var(--size-radius-lg);}
+		border-radius: var(--size-radius-lg); }
 
-	.header {
-		width: 100%;
+	.two-tier-card__header {
+		align-self: end;
+		margin-block: 0;
+		padding-block-end: 0.5rem;
 		border-bottom: 2px solid var(--gray);
 	}
 	
-	.card-title {
+	.two-tier-card__title {
 		text-align: center;
 		font-family: var(--font-family-body);
 		font-size: var(--font-size-label);
 		padding-block: 20px;}
 
-	.body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		padding-inline: 25px;
-		padding-block: 25px;}
-	
-	.body > * + * {
+	.two-tier-card__body > * + * {
 		margin-block-start: 25px;
 	}
 
-	.banner {
+	.two-tier-card__banner {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding-block-start: 10px;
 	}
 
-	.price {
+	.two-tier-card__price {
 		display: flex;
 		align-items: center;
 		font-size: calc(var(--font-size-heading) + 120%);}
 
-	.price-info {
+	.two-tier-card__price-info {
 		font-size: var(--font-size-label);
 		margin-inline-start: 5px;
 	}
 
-	.lists {
+	.two-tier-card__lists {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	.list {
+	.two-tier-card__list {
 		list-style-type: none;
 	}
 
-	.list-item {
+	.two-tier-card__list-item {
 		display: flex;
 		justify-content: flex-start;
 		margin-block-start: 15px;
@@ -108,6 +96,7 @@
 	.cta {
 		display: block;
 		width: 100%;}
+
 	.cta-visual {
 		text-decoration: none;
 		padding-block: 5px;
@@ -121,4 +110,5 @@
 
 
 
+}
 }

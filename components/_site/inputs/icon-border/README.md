@@ -1,7 +1,9 @@
-<!-- /home/blue/webace/library/components/inputs/icon-border/README.md -->
+<!-- /home/blue/webace/library/components/inputs/input-label-inside/README.md -->
 Component name
+Icon border
 
 purpose
+Input textbox
 
 tags
 

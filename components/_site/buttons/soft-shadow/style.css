@@ -1,32 +1,8 @@
 /* /home/blue/webace/library/components/buttons/soft-shadow/style.css */
-THIS IS NEW
-	@layer reset {
-		*,
-		*::before,
-		*::after { box-sizing: border-box; }
-		
-		body {
-			margin: unset; padding: unset; }
+@layer reset, theme, layout, modules.btn-soft-shadow, utilities;
 
-		button,
-		input,
-		textarea,
-		select { font: inherit; }
-		
-		img,
-		picture,
-		svg,
-		canvas {
-			display: block;
-			max-inline-size: 100%; 
-			height: auto; }
-			
-		@media (prefers-reduced-motion: reduce) {
-			*,
-			*::before,
-			*::after {
-				animation-duration: 0.01ms !important;
-				animation-iteration-count: 1 !important;
-				transition-duration: 0.01ms !important;
-				scroll-behavior: auto !important; }}}
-
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("btn-soft-shadow.css") layer(modules.btn-soft-shadow);
+@import url("utilities.css") layer(utilities);

@@ -2,7 +2,7 @@
 
 .three-tier-emphasized-feature-heavy {
 
-	.wrapper {}
+	.three-tier-emphasized-feature-heavy__wrapper {}
 
 	.three-card-wrapper {
 
@@ -121,4 +121,5 @@
 
 
 
+}
 }

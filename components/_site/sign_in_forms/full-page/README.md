@@ -1,4 +1,3 @@
-<!-- /home/blue/webace/library/components/sign_in_forms/full-page/README.md -->
 Component name
 
 purpose

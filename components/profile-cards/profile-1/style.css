@@ -1,4 +1,4 @@
-/* /home/blue/webace/library/components/ ... /profile-1/style.css */
+/* /home/blue/webace/library/components/profile-cards/profile-1/style.css */
 @layer reset, theme, layout, modules.profile-1.css, utilities;
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

@@ -1,5 +1,5 @@
-/* /home/blue/webace/library/components/icon-left/square/style.css */
-@layer reset, theme, layout, modules.btn-icon-left, utilities;
+/* /home/blue/webace/library/components/buttons/icon-left/style.css */
+@layer reset, theme, layout, modules.btn-icon-left.css, utilities;
 
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

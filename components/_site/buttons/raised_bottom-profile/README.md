@@ -1,4 +1,3 @@
-<!-- /home/blue/webace/library/components/buttons/raised_bottom-profile/README.md -->
 Component name
 
 purpose

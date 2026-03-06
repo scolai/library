@@ -1,5 +1,5 @@
-<!-- /home/blue/webace/library/components/buttons/icon-right/README.md -->
 Component name
+Button with icon on right
 
 purpose
 

@@ -3,10 +3,10 @@
 /* actual component wrapper, scope level */
 .btn-uppercase-text {
 
-	.wrapper {
+	.btn-uppercase-text__wrapper {
 		background-color: var(--white);}
 		
-	.wrapper > * + * {
+	.btn-uppercase-text__wrapper > * + * {
 		margin-block-start: 30px; }
 
 	.btn-wrapper {

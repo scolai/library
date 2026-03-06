@@ -1,7 +1,9 @@
 <!-- /home/blue/webace/library/components/inputs/borderless/README.md -->
 Component name
+Borderless
 
 purpose
+Input
 
 tags
 

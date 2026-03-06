@@ -2,7 +2,7 @@
 
 .badge-icon {
 
-	.wrapper {}
+	.badge-icon__wrapper {}
 
 	.badge-wrapper {
 		position: relative; }
@@ -65,4 +65,5 @@
 		letter-spacing: var(--tracking-md); }}
 
 
+}
 }

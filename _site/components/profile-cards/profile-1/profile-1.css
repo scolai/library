@@ -2,7 +2,7 @@
 
 .profile-1 {
 
-	.wrapper { background-color: var(--gray-lightest); }
+	.profile-1__wrapper { background-color: var(--gray-lightest); }
 
 	.card {
 		width: 98vw;
@@ -66,4 +66,5 @@
 		display: block;}
 
 
+}
 }

@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/application layouts/hor-nav-ol-ver/style.css */
+@layer reset, theme, layout, modules.hor-nav-ol-ver.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("hor-nav-ol-ver.css") layer(modules.hor-nav-ol-ver);
+@import url("utilities.css") layer(utilities);

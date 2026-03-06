@@ -1,7 +1,7 @@
-/* /home/blue/webace/library/components/ ... / ... /style.css */
-@layer reset, theme, layout, modules.  ... , utilities;
+/* /home/blue/webace/library/components/vertical-navigation/on-panel/style.css */
+@layer reset, theme, layout, modules.on-panel.css, utilities;
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);
 @import url("layout.css") layer(layout);
-@import url(" ...  .css") layer(modules.  ... );
+@import url("on-panel.css") layer(modules.on-panel);
 @import url("utilities.css") layer(utilities);

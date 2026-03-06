@@ -1,5 +1,5 @@
 /* /home/blue/webace/library/components/buttons/raised-bottom-profile/style.css */
-@layer reset, theme, layout, modules.btn-raised-bottom-profile, utilities;
+@layer reset, theme, layout, modules.btn-raised-bottom-profile.css, utilities;
 
 @import url("reset.css") layer(reset);
 @import url("theme.css") layer(theme);

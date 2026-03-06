@@ -1,4 +1,3 @@
-<!-- /home/blue/webace/library/components/sign_in_forms/two-pane_testimonial/README.md -->
 Component name
 
 purpose

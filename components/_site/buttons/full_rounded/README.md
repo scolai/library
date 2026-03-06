@@ -1,4 +1,3 @@
-<!-- /home/blue/webace/library/components/buttons/full_rounded/README.md -->
 Component name
 
 purpose

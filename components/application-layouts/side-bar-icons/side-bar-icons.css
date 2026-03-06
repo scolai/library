@@ -1,0 +1,67 @@
+@layer modules.side-bar-icons  {
+
+.side-bar-icons {
+
+	/* make page white */
+	.side-bar-icons__wrapper { background-color: var(--white); }
+
+
+	/* display list of items as a centered column on small screens, aligned left */
+	.nav-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		list-style-type: none;
+		width: 90%;
+		max-width: 350px;
+		margin-inline: auto;
+		padding-inline: unset; 
+		
+		/* format links as horizontal navigation tabs, spaced evenly */
+		@media screen and (min-width: 415px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);}}
+	
+	.nav-item {
+		border: 2px solid var(--gray);
+		
+		
+		@media screen and (min-width: 415px) {
+			/* on larger screens center cell items */
+			display: flex;
+			justify-content: center; 
+			
+			/* and remove border */
+			border: 0; 	 }}
+	
+	.nav-item + .nav-item {
+		margin-block-start: 30px; 
+		
+		/* make top of columns flush */
+		@media screen and (min-width: 415px) {
+			margin-block-start: unset; }}
+
+	li { 
+		 }
+
+	/* display list items as blocks on small screens and make entire block clickable */
+	a {
+		display: block;
+		line-height: 3;
+		/* bring link off left border while maintaining clickable area */
+		padding-inline-start: 20px;
+	
+		/* center cell items and make container length clickable */
+		@media screen and (min-width: 415px) {
+			padding-inline-start: unset;
+			padding-inline: 40px; }}
+	
+	a:any-link {
+		text-decoration: none;
+		font-family: var(--font-family-label);
+		font-size: var(--font-size-label);
+		color: var(--gray-dark); }
+
+
+}
+}

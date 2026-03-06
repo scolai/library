@@ -1,7 +1,9 @@
-<!-- /home/blue/webace/library/components/inputs/bottom-border/README.md -->
+<!-- /home/blue/webace/library/components/inputs/small_rounded/README.md -->
 Component name
+Small rounded
 
 purpose
+Input textbox
 
 tags
 
