@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /left-image-meta-title-excerpt/style.css */
-@layer reset, theme, layout, modules.left-image-meta-title-excerpt.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("left-image-meta-title-excerpt.css") layer(modules.left-image-meta-title-excerpt);
-@import url("utilities.css") layer(utilities);

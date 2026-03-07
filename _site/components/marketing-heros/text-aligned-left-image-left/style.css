@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/marketing-heros/text-aligned-left-image-left/style.css */
-@layer reset, theme, layout, modules.text-aligned-left-image-left.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("text-aligned-left-image-left.css") layer(modules.text-aligned-left-image-left);
-@import url("utilities.css") layer(utilities);

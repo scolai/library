@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /bottom-border-thin-darker/style.css */
-@layer reset, theme, layout, modules.hn-bottom-border-thin-darker.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("hn-bottom-border-thin-darker.css") layer(modules.hn-bottom-border-thin-darker);
-@import url("utilities.css") layer(utilities);

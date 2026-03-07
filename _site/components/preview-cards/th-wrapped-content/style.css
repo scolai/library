@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /th-wrapped-content/style.css */
-@layer reset, theme, layout, modules.th-wrapped-content.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("th-wrapped-content.css") layer(modules.th-wrapped-content);
-@import url("utilities.css") layer(utilities);

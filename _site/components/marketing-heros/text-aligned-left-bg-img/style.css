@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /text-aligned-left-bg-img/style.css */
-@layer reset, theme, layout, modules.text-aligned-left-bg-img.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("text-aligned-left-bg-img.css") layer(modules.text-aligned-left-bg-img);
-@import url("utilities.css") layer(utilities);

@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/practice/beaver/beaver-home/style.css */
-@layer reset, theme, layout, modules.beaver.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("beaver.css") layer(modules.beaver);
-@import url("utilities.css") layer(utilities);

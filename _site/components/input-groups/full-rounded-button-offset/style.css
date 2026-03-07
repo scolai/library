@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/inputs/full-rounded-button-offset/style.css */
-@layer reset, theme, layout, modules.input-full-rounded-button-offset, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("input-full-rounded-button-offset.css") layer(modules.input-full-rounded-button-offset);
-@import url("utilities.css") layer(utilities);

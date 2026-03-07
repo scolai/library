@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /second-row-nav/style.css */
-@layer reset, theme, layout, modules.second-row-nav.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("second-row-nav.css") layer(modules.second-row-nav);
-@import url("utilities.css") layer(utilities);

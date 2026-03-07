@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /two-tier-emphasized-plan/style.css */
-@layer reset, theme, layout, modules.two-tier-emphasized-plan.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("two-tier-emphasized-plan.css") layer(modules.two-tier-emphasized-plan);
-@import url("utilities.css") layer(utilities);

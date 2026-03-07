@@ -1,8 +1,0 @@
-/* /home/blue/webace/library/components/buttons/uppercase-text/style.css */
-@layer reset, theme, layout, modules.btn-uppercase-text.css, utilities;
-
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("btn-uppercase-text.css") layer(modules.btn-uppercase-text);
-@import url("utilities.css") layer(utilities);
