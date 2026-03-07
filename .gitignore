@@ -1,23 +1,29 @@
-# Jekyll build output
-_site/
+# Ignore everything
+*
 
-# Jekyll metadata
-.jekyll-metadata
+# But not these directories
+!components/
+!components/**
 
-# Sass/SCSS cache
-.sass-cache/
+!knowledgebase/
+!knowledgebase/**
 
-# Node modules (if you use npm/yarn for assets)
-node_modules/
+!patterns/
+!patterns/**
 
-# Temporary files
-*.log
-*.tmp
-*.swp
+!scripts/
+!scripts/**
 
-# OS files
-.DS_Store
-Thumbs.db
 
-# Other
-_components
+
+# And not these files
+!README.md
+!.gitignore
+!global.css
+!reset.css
+!theme.css
+!utilities.css
+!index.html
+!main.css
+!style.css
+!library-utilities.css
