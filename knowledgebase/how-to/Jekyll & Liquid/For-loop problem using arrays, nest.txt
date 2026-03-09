@@ -1,0 +1,45 @@
+For-loop problem: using arrays, nested loops
+
+This loops all info under tour_itinerary for each header
+because "row" has been used twice to call all itinerary values
+also, this setup enables only the first info to be read. 
+
+tour_itinerary:
+  - header: " 10:00 - シェラトン・センター・トロント・ホテル ロビー集合・出発"
+    info: "Photo stops at City Hall and Old City Hall"
+    info: "TTC一日乗車券を使って移動開始"
+    info_en: "Photo stops at City Hall and Old City Hall"
+    info_en: "Begin using TTC day pass for transit"
+
+{% for row in page.tour_itinerary %}
+	<tr class="table-row">
+		<th class="table-row-header" scope="row">{{ row.header }}</th>
+		{% for row in page.tour_itinerary %}
+			<td class="table-row-information">{{ row.info }}</td>
+		{% endfor %}
+	</tr>
+{% endfor %}
+
+
+FIX
+turn info into an array 
+
+tour_itinerary:
+  - header: " 10:00 - シェラトン・センター・トロント・ホテル ロビー集合・出発"
+    info: 
+      - "Photo stops at City Hall and Old City Hall"
+      - "TTC一日乗車券を使って移動開始"
+    info_en: 
+      - "Photo stops at City Hall and Old City Hall"
+      - "Begin using TTC day pass for transit"
+
+then call the array explicitly
+
+{% for row in page.tour_itinerary %} 
+	<tr class="table-row">
+		<th class="table-row-header" scope="row">{{ row.header }}</th>
+		{% for item in row.info %}
+			<td class="table-row-information">{{ item }}</td>
+		{% endfor %}
+	</tr>
+{% endfor %}

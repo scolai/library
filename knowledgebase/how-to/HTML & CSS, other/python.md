@@ -1,0 +1,5 @@
+HOW TO ROUND FLOATING POINT
+round(3.14592344, 2)
+
+HOW TO REMOVE SPACE AFTER COMMA IN PRINT()
+sep='' #double single quote

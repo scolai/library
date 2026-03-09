@@ -1,0 +1,138 @@
+testimonials:
+  - id: niagara
+    title: "Niagara Tour"
+    excerpt: "Experience the falls up close."
+    thumbnail:
+      path: /images/tours
+      base: niagara
+      alt: "Niagara Falls tour"
+
+tours:
+  - id: winery
+    title: "Winery Tour"
+    excerpt: "Taste local wines."
+    thumbnail:
+      path: /images/tours
+      base: winery
+      alt: "Winery tour"
+
+
+
+site-cards.html
+
+{% if page.testimonials %}
+{% for card in site.data.cards.testimonials %}
+  {% include site-card.html 
+     title=card.title 
+     excerpt=card.excerpt 
+     thumbnail=card.thumbnail %}
+ {% endfor %}
+ {% endif %}
+
+{% if page.tours %}
+{% for card in site.data.cards.tours %}
+  {% include site-card.html 
+     title=card.title 
+     excerpt=card.excerpt 
+     thumbnail=card.thumbnail %}
+{% endfor %}
+{% endif %}
+
+
+site-card.html
+
+
+<div class="card">								
+    <div class="card__media">
+        <picture class="card__thumbnail-wrapper">
+            {% if page.thumbnail %}
+                {% include site/site-thumbnail.html 
+                path=page.thumbnail.path 
+                base=page.thumbnail.base 
+                alt=page.thumbnail.alt 
+                caption=page.thumbnail.caption 
+                fetch_priority=page.thumbnail.fetch_priority %}		
+            {% endif %}
+        </picture>
+        <span class="card__thumbnail-overlay"><p class="overlay-text">{{ page.thumbnail.overlay }}</p></span>
+    </div>
+    <div class="card__description">
+        <h2 class="card__title">{{ page.card.title }}</h2>
+        <div class="card__excerpt">
+            {% for item site.data.card.excerpt %}
+                <p></p>
+            {% endfor %}
+        </div>
+        <div class="card__cta">もっと詳しく知る...{% include cta-email-button.html %}</div>
+    </div>
+</div>
+
+site-cards:
+{% if page.testimonials %}
+  {% for card in site.data.cards.testimonials %}
+    {% include site-card.html card=card %}
+  {% endfor %}
+{% endif %}
+
+{% if page.tours %}
+  {% for card in site.data.cards.tours %}
+    {% include site-card.html card=card %}
+  {% endfor %}
+{% endif %}
+
+
+site-card:
+{% if include.card.type == "testimonial" %}
+  <!-- testimonial markup -->
+{% elsif include.card.type == "tour" %}
+  <!-- tour markup -->
+{% endif %}
+
+for multiple pairings (eg same data, different layouts)
+use variant
+{% for card in site.data.cards.tours %}
+  {% include site-card.html card=card variant=page.layout_variant %} # layout_variant 
+{% endfor %}
+
+
+Yes — `include` in `site-card.html` refers to the parameters passed in from `site-cards.html`. When you write:
+
+```liquid
+{% include site-card.html card=card %}
+```
+
+the loop variable `card` from `site-cards` is handed into `site-card`. Inside `site-card.html`, you access it as `include.card`. That’s why you can check `include.card.type` — it’s reading the `type` property of the object passed down from `site-cards`.  
+
+Would that be best at this time?
+
+
+Think of it this way:
+
+site-cards.html: decides which dataset to loop over (testimonials, tours, etc.). That’s its only job — pick the source.
+
+site-card.html: doesn’t “know” which dataset was chosen. It just receives one object at a time (include.card).
+
+So the “block of code” question:
+
+site-cards doesn’t grab different blocks from site-card. It always calls the same include.
+
+Inside site-card, you branch on include.card.type (or another property) to decide which markup to render.
+
+In other words:
+
+site-cards = which cards to send.
+
+site-card = how each card is rendered, depending on its type.
+
+That’s the division of responsibility. site-cards doesn’t select blocks inside site-card; it just feeds the right data, and site-card itself chooses the markup.
+
+front matter:
+testimonials:
+  - niagara
+  - mulholland
+  - ...
+
+tours:
+  - niagara
+  - juvy
+  - iowa

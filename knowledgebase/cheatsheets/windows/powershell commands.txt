@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse | Where {$_.Name -match 'Toronto'} | Select Fullname

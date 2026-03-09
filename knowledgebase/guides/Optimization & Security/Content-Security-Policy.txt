@@ -1,0 +1,123 @@
+ERROR:
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com">
+
+ Content-Security-Policy: The page’s settings blocked a script (script-src-elem) at https://www.googletagmanager.com/gtag/js?id=G-8C6XB8PNYP from being executed because it violates the following directive: “script-src 'self' https://apis.google.com”
+
+ Content-Security-Policy: The page’s settings blocked an inline script (script-src-elem) from being executed because it violates the following directive: “script-src 'self' https://apis.google.com”. Consider using a hash ('sha256-A9ISyxIMRyj1D3n7jQBXZOPBxeA6AQT7Snw042kqgPM=') or a nonce.
+
+GENERATING AND DEPLOYING NONCES
+
+1. generate a random nonce on each request
+nonce = random_base64_string()
+
+2. insert nonce into csp header
+Content-Security-Policy:
+  default-src 'self';
+  script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
+  connect-src 'self' https://www.google-analytics.com;
+  img-src 'self' https://www.google-analytics.com data:;
+  style-src 'self';
+  font-src 'self';
+  frame-ancestors 'none';
+  object-src 'none';
+  base-uri 'self';
+
+3. insert the same nonce into script tag
+<script nonce="{{ page.nonce }}">// inline script here</script>
+
+eg GA
+<script nonce="{{ nonce }}" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+
+<script nonce="{{ nonce }}">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+
+***
+
+Preparing nonce for deployment using Jekyll 
+1. update jekyll templates to accept nonce variable injection
+add nonce to script tags
+<script nonce="{{nonce}}">// inline script here</script>
+
+2. prepare csp header template
+Content-Security-Policy:
+  default-src 'self';
+  script-src 'self' 'nonce-{{nonce}}' https://www.googletagmanager.com https://www.google-analytics.com;
+  connect-src 'self' https://www.google-analytics.com;
+  img-src 'self' https://www.google-analytics.com data:;
+  style-src 'self';
+  font-src 'self';
+  frame-ancestors 'none';
+  object-src 'none';
+  base-uri 'self';
+
+3. configure host server settings
+managed hosts typically have a gui for adding csp headers, but will still require the server-side hook to inject the nonce.
+
+If you're on Apache server:
+Header set Content-Security-Policy "script-src 'self' 'nonce-%{RAND_BYTES_16}e'"
+
+If you’re on Netlify
+Use serverless functions to inject the nonce.
+
+If you’re on Cloudflare
+Use a Worker to generate the nonce and rewrite the response.
+
+If you're on Nginx
+set $nonce "";
+set $nonce $request_id;
+
+For greengeeks/Apache/cpanel:
+- configure csp headers via .htaccess
+- generate a nonce via apache's built-in random byte generator
+- inject the nonce into the csp header
+
+1. generate a nonce in apache
+# generate a 16-byte random value
+SetEnvIfNoCase Request_URI ".*" nonce=%{RAND_BYTES_16}e
+- this provides a new random value per request
+
+2. insert nonce into csp header
+in .htaccess
+<IfModule mod_headers.c>
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'nonce-%{nonce}e' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com data:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self';"
+</IfModule>
+this produces something like 
+script-src 'self' 'nonce-4f9a1c...' https://www.googletagmanager.com ...
+
+3. prepare script tags in html 
+<script nonce="{{nonce}}">// inline script here</script>
+
+4. inject the same nonce into html by substituting {{ page.nonce }} with {{nonce}}
+add to .htaccess
+<IfModule mod_substitute.c>
+AddOutputFilterByType SUBSTITUTE text/html
+Substitute "s/nonce=\"{{nonce}}\"/nonce=\"%{nonce}e\"/ni"
+</IfModule>
+
+final .htaccess contains
+<IfModule mod_headers.c>
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'nonce-%{nonce}e' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com data:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self';"
+</IfModule>
+
+<IfModule mod_substitute.c>
+AddOutputFilterByType SUBSTITUTE text/html
+Substitute "s/nonce=\"{{nonce}}\"/nonce=\"%{nonce}e\"/ni"
+</IfModule>
+
+html script tags contain:
+<script nonce="{{nonce}}">// inline script here</script>
+
+INSTALL SEQUENCE OVERVIEW
+paste the .htaccess
+
+enable the modules
+
+confirm the header is being sent
+
+confirm the substitution is happening
+
+reload the page

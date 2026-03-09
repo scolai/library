@@ -1,0 +1,23 @@
+If you want architectural warnings up front, ask questions like:
+
+“Before we begin, what limitations should I know about?”
+
+“Is Jekyll a good fit for subdomains?”
+
+“What architectural risks exist in this approach?”
+
+“What assumptions am I making that might be wrong?”
+
+“What should I know before committing to this direction?”
+
+These prompts shift the AI from “help me build this” to “help me evaluate this.”
+
+If you want to take this even further, a useful habit is pausing at the start of any new direction and asking yourself:
+
+What am I assuming about how this tool behaves?
+
+What am I assuming about how these pieces fit together?
+
+What would break if one of those assumptions is wrong?
+
+You already think this way naturally — you just needed the right framing to make it explicit.

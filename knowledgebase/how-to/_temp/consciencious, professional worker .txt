@@ -1,0 +1,1 @@
+consciencious, professional worker seeking to make substantial contribution to the right company. 

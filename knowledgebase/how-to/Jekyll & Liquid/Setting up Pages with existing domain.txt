@@ -1,0 +1,267 @@
+Setting up Pages with existing domain name scottlaing.ca. This error
+
+Both www.scottlaing.ca and its alternate name are improperly configured
+Domain does not resolve to the GitHub Pages server. For more information, see documentation (NotServedByPagesError).
+
+This error is one of the most common GitHub Pages domain‑binding issues — and the good news is that it’s almost always caused by **DNS records not pointing to GitHub’s servers**.
+
+Let’s walk through this cleanly and get *scottlaing.ca* resolving properly.
+
+---
+
+# 🟦 Why GitHub is showing “NotServedByPagesError”
+GitHub Pages checks whether your domain’s DNS records point to GitHub’s servers.
+
+Right now, GitHub sees:
+
+- **scottlaing.ca → NOT pointing to GitHub**
+- **www.scottlaing.ca → NOT pointing to GitHub**
+
+So GitHub refuses to activate the domain.
+
+This is 100% a DNS configuration issue.
+
+---
+
+# 🟦 Correct DNS settings for a **root domain** (scottlaing.ca)
+
+For apex/root domains, GitHub requires **A records**:
+
+| Type | Name | Value |
+|------|-------|--------|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+
+These four IPs are GitHub’s Pages servers.
+
+---
+
+# 🟦 Correct DNS settings for **www.scottlaing.ca**
+
+GitHub requires a **CNAME**:
+
+| Type | Name | Value |
+|------|-------|--------|
+| CNAME | www | scolai.github.io |
+
+(Or whatever your GitHub Pages username is — but based on your repo, this is correct.)
+
+---
+
+# 🟦 The two most common mistakes (likely your case)
+
+### ❌ Mistake 1 — Using A records for `www`
+`www` must be a **CNAME**, not an A record.
+
+### ❌ Mistake 2 — Missing the four GitHub A records
+If your DNS provider only has one A record or none, GitHub will reject the domain.
+
+---
+
+# 🟦 After updating DNS
+Two final steps:
+
+### 1. In your GitHub repo → Settings → Pages  
+Set:
+
+- **Custom domain:** `scottlaing.ca`
+- Check **Enforce HTTPS**
+
+### 2. Add a `CNAME` file to your repo (GitHub does this automatically)
+It should contain:
+
+```
+scottlaing.ca
+```
+
+---
+
+# 🟦 DNS propagation timing
+Most providers update within minutes, but GitHub may take:
+
+- **5–10 minutes** to detect changes  
+- **Up to 1 hour** for HTTPS certificate issuance  
+
+If it still errors after 1–2 hours, it means DNS is still misconfigured.
+
+---
+
+# 🟦 If you want, I can check your DNS live
+Just tell me:
+
+- Your DNS provider (Namecheap, Cloudflare, Google Domains, etc.)
+- Whether you want **www → root** or **root → www** as the primary domain
+
+I can then give you the exact records to enter.
+
+Would that be best at this time?
+
+That’s a great sign — it means the **DNS records at your domain provider are now correct** and GitHub can see them. You’re past the hardest part.
+
+At this stage, there are only **two remaining steps** before everything goes fully live.
+
+---
+
+# 🟦 What happens *after* DNS is successful
+
+When GitHub shows “DNS check successful,” it means:
+
+- Your A records point to GitHub Pages  
+- Your `www` CNAME points to `scolai.github.io`  
+- GitHub can verify ownership  
+
+Now GitHub will move to the next phase:
+
+### **Issuing the HTTPS certificate**
+
+This part can take:
+
+- **5–10 minutes** (typical)  
+- Up to **1 hour** (rare)  
+
+During this window, GitHub may still show warnings like:
+
+- “NotServedByPagesError”  
+- “Enforce HTTPS unavailable”  
+- “Certificate not yet issued”  
+
+These clear themselves automatically once the certificate is ready.
+
+---
+
+# 🟦 What you should do now
+
+Go to:
+
+**Repo → Settings → Pages**
+
+Make sure:
+
+### ✔ Custom domain:
+```
+scottlaing.ca
+```
+
+### ✔ CNAME file in your repo contains:
+```
+scottlaing.ca
+```
+
+### ✔ “Enforce HTTPS” is checked  
+(If it’s still greyed out, that’s normal — it will unlock once the certificate is issued.)
+
+---
+
+# 🟦 What you can expect next
+
+Within a short time:
+
+- The GitHub Pages error disappears  
+- HTTPS becomes available  
+- Your site loads at **https://scottlaing.ca**  
+- `www.scottlaing.ca` redirects correctly  
+
+You’re essentially in the “propagation + certificate” waiting period now.
+
+---
+
+If you want, I can walk you through verifying:
+
+- the CNAME file  
+- the Pages settings  
+- the redirect behavior  
+- or the final HTTPS activation  
+
+Would that be best at this time?
+
+Great — that means you just fixed the **core mismatch** that was blocking GitHub Pages from validating your domain.
+
+Here’s what happened, why the fix worked, and what to expect next.
+
+---
+
+# 🟦 Why changing the repo CNAME fixed the DNS check
+
+Your repo’s `CNAME` file tells GitHub:
+
+> “Serve this site at **this exact domain**.”
+
+When it contained:
+
+```
+www.scottlaing.ca
+```
+
+GitHub expected the DNS to point **www → GitHub Pages**, not the root domain.  
+But your DNS was configured for:
+
+- **Root domain (scottlaing.ca)** → GitHub Pages A records  
+- **www.scottlaing.ca** → CNAME to scolai.github.io  
+
+So GitHub saw a mismatch and refused to validate.
+
+Once you changed the repo CNAME to:
+
+```
+scottlaing.ca
+```
+
+GitHub’s expectations and your DNS setup finally aligned.
+
+That’s why the DNS check immediately succeeded.
+
+---
+
+# 🟦 What happens next (important)
+
+Now that DNS is correct and the repo CNAME matches:
+
+- GitHub will issue an HTTPS certificate  
+- “Enforce HTTPS” will unlock  
+- Both `scottlaing.ca` and `www.scottlaing.ca` will serve securely  
+
+This usually takes:
+
+- **5–10 minutes**  
+- Up to **1 hour** in slower cases  
+
+During this window, GitHub may still show:
+
+- “Enforce HTTPS — unavailable”  
+- “Certificate not yet issued”  
+
+These clear automatically once the certificate is ready.
+
+---
+
+# 🟦 Quick checklist to confirm everything is aligned
+
+### ✔ Repo CNAME file:
+```
+scottlaing.ca
+```
+
+### ✔ DNS A records for root domain:
+- 185.199.108.153  
+- 185.199.109.153  
+- 185.199.110.153  
+- 185.199.111.153  
+
+### ✔ DNS CNAME for www:
+```
+www → scolai.github.io
+```
+
+### ✔ No AAAA records for root or www  
+### ✔ No proxying (if using Cloudflare)  
+### ✔ No ALIAS/ANAME flattening for www  
+
+If all of that is true, HTTPS will activate shortly.
+
+---
+
+If you want, I can help you verify the final HTTPS activation or check the redirect behavior once it goes live.
+
+Would that be best at this time?

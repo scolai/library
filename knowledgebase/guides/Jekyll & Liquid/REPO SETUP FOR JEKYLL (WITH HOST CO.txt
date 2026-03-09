@@ -1,0 +1,4 @@
+REPO SETUP FOR JEKYLL (WITH HOST CONFIG FOR WEBSITE UPDATES/HOST PULLS)
+
+1. Standard GitHub Repo Structure for Jekyll Projects
+A typical Jekyll repo looks like this:

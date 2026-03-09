@@ -1,0 +1,112 @@
+SSH KEY
+This guide will walk you through making
+✔ Password‑less SSH access
+✔ A secure, passphrase‑protected private key
+✔ A trusted channel for deployments, configuration, and server management
+
+This involves ensuring
+Your local private key is valid and loaded into ssh‑agent
+
+Your public key was correctly imported into cPanel
+
+The key was authorized in cPanel
+
+Your cPanel username + server hostname were correct
+
+
+DEPLOY KEY
+✔ Generate a deploy key on the server
+✔ Add the server’s public key to your GitHub repo as a Deploy Key
+✔ Use git pull on the server to update your site
+
+Step 1 — SSH into GreenGeeks
+ssh yourcpanelusername@yourserverhostname
+
+Step 2 — Generate a deploy key on the server
+This keypair will belong only to the server and only to one repo.
+
+Run this on the server:
+ssh-keygen -t ed25519 -C "greengeeks-deploy-key"
+
+When it asks for a file location, accept the default:
+/home/yourcpanelusername/.ssh/id_ed25519
+When it asks for a passphrase:
+Leave it empty (deploy keys must be non‑interactive)
+
+Press Enter twice
+
+This results in:
+
+Your identification has been saved in /home/beavert2/.ssh/id_ed25519.
+Your public key has been saved in /home/beavert2/.ssh/id_ed25519.pub.
+The key fingerprint is:
+SHA256:RErrLVGkmOu5wZigW0Dmplvo3dR40652ODyPi3xenOM greengeeks-deploy-key
+The key's randomart image is:
++--[ED25519 256]--+
+|      ..+        |
+|     + *         |
+| o  o = .        |
+|+    o +         |
+|oo  . o S        |
+|++ = .o.o .      |
+|+ = =o.+.*       |
+|.=. +ooB*..      |
+|o. ..++=BE       |
++----[SHA256]-----+
+
+
+Step 3 — View the public key
+Still on the server:
+cat ~/.ssh/id_ed25519.pub
+
+Step 4 — Add the public key to GitHub as a Deploy Key
+Go to:
+GitHub → Your Repo → Settings → Deploy Keys → Add deploy key
+Paste the public key.
+
+Choose:
+Allow read access (safe)
+Or Allow write access (only if the server needs to push, which is rare)
+
+Save.
+
+Step 5 — Test GitHub access from the server
+Back on the server:
+
+Step 6 — Clone your repo onto the server
+Navigate to your web root: cd ~/public_html
+
+Then clone: git clone git@github.com:yourusername/yourrepo.git
+
+Or if the repo already exists:
+cd yourrepo
+git pull
+
+
+alias beaver-dryrun="rsync -avzn --delete _site/ user@server:/path/to/public_html/"
+alias beaver-dryrun="rsync -avzn --delete _site/ beavert2@mtl203.greengeeks.net:/home/beavert2/public_html/"
+
+alias beaver-deploy="rsync -avz --delete _site/ beavert2@mtl203.greengeeks.net:/home/beavert2/public_html/"
+
+backup current website before deployment:
+alias backup-site="ssh beavert2@mtl203.greengeeks.net 'cp -a /home/beavert2/public_html /home/beavert2/public_html_$(date +%Y%m%d_%H%M%S)'"
+alias backup-site="ssh beavert2@mtl203.greengeeks.net 'cp -a public_html public_html_$(date +%Y%m%d_%H%M%S)'"
+
+
+alias beaver-dryrun="rsync -avzn --delete _site/ beavert2@mtl203.greengeeks.net:/home/beavert2/public_html_test/"
+alias beaver-deploy="rsync -avz --delete _site/ beavert2@mtl203.greengeeks.net:/home/beavert2/public_html_test/"
+alias beaver-backup="ssh beavert2@mtl203.greengeeks.net 'cp -a public_html_test public_html_test_$(date +%Y%m%d_%H%M%S)'"
+alias beaver-rollback="ssh beavert2@mtl203.greengeeks.net 'latest=$(ls -dt public_html_* | head -1); rsync -avz --delete $latest/ public_html_test/'"
+
+alias rollback-test="ssh beavert2@mtl203.greengeeks.net 'latest=$(ls -dt public_html_test_* | head -1); rsync -avz --delete $latest/public_html_test/ public_html_test/'"
+alias rollback-test="ssh beavert2@mtl203.greengeeks.net 'latest=$(ls -dt public_html_test_* | head -1); rsync -avz --delete $latest/public_html_test/ public_html_test/'"
+alias rollback-test="ssh beavert2@mtl203.greengeeks.net 'latest=$(ls -dt public_html_test_* | head -1); rsync -avz --delete $latest/public_html_test/ public_html_test/'"
+alias rollback-test="ssh beavert2@mtl203.greengeeks.net 'cd /home/beavert2; latest=$(ls -dt public_html_test_* | head -1); rsync -avz --delete $latest/public_html_test/ public_html_test/'"
+alias rollback-test="ssh beavert2@mtl203.greengeeks.net 'cd ~; latest=$(ls -dt public_html_test_* | head -1); rsync -avz --delete $latest/public_html_test/ public_html_test/'"
+alias rollback-test="ssh beavert2@mtl203.greengeeks.net 'cd /home/beavert2 && latest=$(ls -dt public_html_test_* | head -1) && rsync -avz --delete $latest/public_html_test/ public_html_test/'"
+
+alias beaver-dryrun='rsync -avz --delete --dry-run \
+    -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no -p 22" \
+    --exclude-from=$(pwd)/_admin/rsync-exclude.txt \
+    ~/webace/websites/beavertatsujinguides/_site/ \
+    beavert2@mtl203.greengeeks.net:/home/beavert2/public_html/'
