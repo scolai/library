@@ -264,3 +264,11 @@ XCopy can be used with the /d switch to copy files updated after a specific date
 
 Managing Paste Conflicts
 If you simply use Ctrl+C/Ctrl+V, you can choose the option to "Compare info for both files" or "Skip" in the Windows 11 file conflict dialogue box, though this is less efficient than the command-line methods. 
+
+
+HOW TO FIND AND DELETE ALL FILES WITH AN EXTENSION IN FOLDER AND ALL SUBFOLDERS
+navigate to parent folder
+>find -name "*.Identifier" -type f  ## lists all files with extension ".Identifier"
+>find -name "*.Identifier" -type f -delete
+
+
