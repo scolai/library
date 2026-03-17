@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/testimonials/left-aligned-carousel-dotted-pagination/style.css */
+@layer reset, theme, layout, modules.left-aligned-carousel-dotted-pagination.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("left-aligned-carousel-dotted-pagination.css") layer(modules.left-aligned-carousel-dotted-pagination);
+@import url("utilities.css") layer(utilities);

@@ -1,0 +1,70 @@
+@layer modules.profile-1  {
+
+.profile-1 {
+
+	.profile-1__wrapper { background-color: var(--gray-lightest); }
+
+	.card {
+		width: 98vw;
+		max-width: 500px;
+		margin-inline: auto;
+		padding-block: 20px;
+		padding-inline: 20px;}
+		
+	.card-visual {
+		border: 2px solid var(--gray);
+		border-radius: var(--size-radius-md); 
+		background-color: var(--white); }
+	
+	.card > * + * {
+		margin-block-start: 30px;}
+	
+	.header { 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;	
+		
+		@media screen and (min-width: 500px) {
+			display: grid;
+			grid-template-columns: 1fr 70%;
+			row-gap: 15px; }	}
+			
+	.header > * + * {
+		
+		@media screen and (min-width: 500px) {
+			margin-inline-start: 20px; }}
+	.headings {
+		
+		@media screen and (min-width: 500px) {
+			text-align: left; }}
+			
+	.headings > * + * {
+		margin-block-start: 5px; }
+			
+	.media {
+		display: flex;
+		height: 125px;
+		width: 125px;}
+		
+	.media img {
+		border-radius: var(--size-radius-circle);
+		background-position: center;
+		background-size: contain;}
+		
+	.title {}
+	.subtitle {}
+	
+	.body {}
+	
+	.footer {
+		display: flex;
+		justify-content: center;
+		}
+	.column { flex: 1; gap: 10px; }
+	.item {
+		display: block;}
+
+
+}
+}

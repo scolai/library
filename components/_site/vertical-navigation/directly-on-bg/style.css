@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/vertical-navigation/directly-on-background/style.css */
+@layer reset, theme, layout, modules.directly-on-background.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("directly-on-background.css") layer(modules.directly-on-background);
+@import url("utilities.css") layer(utilities);

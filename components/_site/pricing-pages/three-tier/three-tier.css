@@ -1,0 +1,94 @@
+@layer modules.three-tier  {
+
+.three-tier {
+
+	.three-card-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 1rem;
+		max-inline-size: 950px;
+		margin-inline: auto;}
+
+	.three-tier-card {
+		display: grid;
+		gap: 0;
+		grid-row: span 3;
+		grid-template-rows: max-content auto max-content;
+		grid-template-rows: subgrid;
+		max-width: 300px;
+		padding: 1rem;
+		border-radius: 0.5rem;
+}
+			
+	.three-tier-card-visual {
+		background-color: var(--white);
+		border: 2px solid var(--gray);
+		border-radius: var(--size-radius-lg);}
+
+	.three-tier-card__header {
+		width: 100%;
+		border-bottom: 2px solid var(--gray);
+	}
+	
+	.three-tier-card__title {
+		text-align: center;
+		font-family: var(--font-family-body);
+		font-size: var(--font-size-label);
+		padding-block: 20px;}
+
+	.three-tier-card__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding-inline: 25px;
+		padding-block: 25px;
+		padding-block-end: 45px;}
+	
+	.three-tier-card__lists + .cta {
+		margin-block-start: 25px;}
+
+	.three-tier-card__price {
+		display: flex;
+		align-items: center;
+		font-size: calc(var(--font-size-heading) + 120%);}
+
+	.three-tier-card__price-info {
+		font-size: var(--font-size-label);
+		margin-inline-start: 5px;
+	}
+
+	.three-tier-card__lists {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.three-tier-card__list {
+		list-style-type: none;
+	}
+
+	.three-tier-card__list-item {
+		display: flex;
+		justify-content: flex-start;
+		margin-block-start: 15px;
+	}
+		
+	.cta {
+		display: block;
+		width: 100%;}
+	.cta-visual {
+		text-decoration: none;
+		padding-block: 5px;
+		padding-inline: 15px;
+		text-align: center;
+		background-color: var(--gray-darker);
+		color: var(--gray-lightest); 
+		border: 0;
+		border-radius: var(--size-radius-md);}
+
+
+
+
+}
+}

@@ -1,0 +1,80 @@
+@layer modules.btn-full-rounded {
+
+/* actual component wrapper, scope level */
+.btn-full-rounded {
+
+	.btn-full-rounded__wrapper {
+		background-color: var(--white);}
+		
+	.btn-full-rounded__wrapper > * + * {
+		margin-block-start: 30px; }
+	
+	.btn--primary {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-lightest);
+		background-color: var(--gray-darkest); 
+		letter-spacing: var(--tracking-xl);
+		padding-inline: 1.15rem;
+		padding-block: 0.75rem;
+		border: 0;
+		border-radius: var(--size-radius-full);
+		cursor: pointer;
+		transition: background-color var(--transition-fast) ease-in-out; 
+		transition: color var(--transition-fast) ease-in-out; }
+		
+	.btn--primary:focus {
+		background-color: var(--gray);
+		color: var(--gray-darkest); }
+	
+	.btn--primary:hover {
+		background-color: var(--gray);
+		color: var(--gray-darkest);}
+	
+	/*.btn--primary:active {} */
+	
+	.btn--secondary-1 {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-darkest);
+		background-color: var(--gray-lighter); 
+		letter-spacing: var(--tracking-xl);
+		padding-inline: 1.15rem;
+		padding-block: 0.75rem;
+		border: 0;
+		border-radius: var(--size-radius-full);
+		cursor: pointer;
+		transition: background-color var(--transition-fast) ease-in-out; 
+		transition: color var(--transition-fast) ease-in-out; 	}
+	
+	.btn--secondary-2 {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-dark);
+		background-color: var(--white); 
+		letter-spacing: var(--tracking-xl);
+		padding-inline: 1.1rem;
+		padding-block: 0.7rem;
+		border: 1px solid var(--gray);
+		border-radius: var(--size-radius-full);
+		cursor: pointer;
+		transition: background-color var(--transition-fast) ease-in-out; 
+		transition: color var(--transition-fast) ease-in-out; 	}
+	
+	.btn--secondary-3 {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-darkest);
+		background-color: var(--white); 
+		letter-spacing: var(--tracking-xl);
+		padding-inline: 1.05rem;
+		padding-block: 0.65rem;
+		border: 2px solid var(--gray);
+		border-radius: var(--size-radius-full);
+		cursor: pointer;
+		transition: background-color var(--transition-fast) ease-in-out; 
+		transition: color var(--transition-fast) ease-in-out; 	}
+	
+}
+
+}

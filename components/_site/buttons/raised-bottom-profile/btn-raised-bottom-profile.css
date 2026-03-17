@@ -1,0 +1,82 @@
+@layer modules.btn-raised-bottom-profile {
+
+/* actual component wrapper, scope level */
+.btn-raised-bottom-profile {
+
+	.btn-raised-bottom-profile__wrapper {
+		background-color: var(--white);}
+		
+	.btn-raised-bottom-profile__wrapper > * + * {
+		margin-block-start: 30px; }
+
+	.btn-wrapper {
+		position: relative; }
+
+	.btn--primary {
+		display: inline-block;
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-lightest);
+		background-color: var(--gray-darker); 
+		letter-spacing: var(--tracking-xl);
+		padding-inline: 1.15rem;
+		line-height: 2.5;
+		border: 0;
+		border-radius: var(--size-radius-md);
+		box-shadow: 0px 3px 0px 0px var(--black), 0px 4px 1px 1px var(--gray-lighter); 
+		cursor: pointer;
+		transition: background-color var(--transition-fast) ease-in-out; }
+
+	.btn--primary:focus {
+		background-color: var(--gray-dark);
+		color: var(--gray-light); }
+	
+	.btn--primary:hover {
+		background-color: var(--gray);
+		color: var(--gray-darkest);}
+	
+	/* .btn--primary:active {} */
+	
+	.btn--secondary-1 {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-darkest);
+		background-color: var(--gray-lighter); 
+		letter-spacing: var(--tracking-xl);
+		padding-inline: 1.15rem;
+		line-height: 2;
+		border: 0;
+		border-radius: var(--size-radius-md);
+		box-shadow: 0px 3px 0px 0px var(--gray-light), 0px 5px 2px 0px var(--gray-lighter); 
+		cursor: pointer; }
+	
+	.btn--secondary-2 {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-dark);
+		background-color: var(--white); 
+		letter-spacing: var(--tracking-xl);
+		padding-inline: 1.1rem;
+		line-height: 2;
+		border: 1px solid var(--gray);
+		border-radius: var(--size-radius-md);
+		box-shadow: 0px 3px 0px 0px var(--gray-light), 0px 5px 2px 0px var(--gray-lighter); 
+		cursor: pointer;}
+	
+	.btn--secondary-3 {
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);
+		color: var(--gray-darkest);
+		background-color: var(--white); 
+		letter-spacing: var(--tracking-xl);
+		line-height: 2;
+		padding-inline: 1.05rem;
+/*		padding-block: 0.65rem; */
+		border: 2px solid var(--gray);
+		border-radius: var(--size-radius-md);
+		box-shadow: 0px 2px 0px 0px var(--gray-light), 0px 3px 2px 0px var(--gray-lighter); 
+		cursor: pointer;}
+	
+}
+
+}

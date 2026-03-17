@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/marketing-sections/ms-quad-one-line/style.css */
+@layer reset, theme, layout, modules.ms-quad-one-line.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("ms-quad-one-line.css") layer(modules.ms-quad-one-line);
+@import url("utilities.css") layer(utilities);

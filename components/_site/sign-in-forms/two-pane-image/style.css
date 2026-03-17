@@ -1,0 +1,8 @@
+/* /home/blue/webace/library/components/sign-in-forms/two-pane-image/style.css */
+@layer reset, theme, layout, modules.form-two-pane-image, utilities;
+
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("form-two-pane-image.css") layer(modules.form-two-pane-image);
+@import url("utilities.css") layer(utilities);

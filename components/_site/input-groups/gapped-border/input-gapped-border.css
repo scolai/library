@@ -1,0 +1,55 @@
+@layer modules.input-gapped-border {
+
+	.input-gapped-border .wrapper {
+		height: 100vh;
+		width: 100%; }
+
+	.input-wrapper {
+		position: relative;  }
+
+	.input-wrapper input[type="text"] {
+		height: 2.25rem;
+		width: 350px; 
+		max-width: 350px;
+		border: 0;
+		box-shadow: 0 -1px 0px 0px var(--gray-light) inset, 0 1px 0px 0px var(--gray-lighter) inset, 1px 0px 0px 0px var(--gray-lighter) inset, -1px 0px 0px 0px var(--gray-lighter) inset;
+		border-start-start-radius: 3px;
+		border-start-end-radius: 3px;
+		border-end-start-radius: 3px;
+		border-end-end-radius: 3px;
+		outline: none; 
+		padding-inline: 1rem;
+		padding-inline-end: 7rem;
+		background-color: var(--white); }
+
+	.input-wrapper input[type="text"]:focus {
+		background-color: var(--white); 
+		border-color: var(--gray-darker); }
+		
+	.input-wrapper .input-label {
+		position: absolute;
+		top: -60%;
+		left: 0rem;
+		font-family: var(--font-sans);
+		font-size: var(--label);
+		color: var(--dark); }
+	.input-wrapper .input-button {
+		position: absolute;
+		top: 11.5%;
+		right: 0.5%;
+		border: none;
+		border-start-end-radius: 0;
+		border-start-start-radius: 0;
+		border-end-start-radius: 0;
+		border-end-end-radius: 0;
+		padding-block: 0.3rem; 
+		padding-inline: 1.25rem;
+		box-shadow: 1px 0px 0 0px var(--gray) inset, 0px 0px 0px 0px var(--gray-light) inset, 0px 0px 0px 0px transparent inset, 0px 0px 0px 0px var(--gray-lighter) inset;
+		background-color: var(--white);
+		color: var(--gray-darker);
+		font-family: var(--font-family-button);
+		font-size: var(--font-size-button);		
+		cursor: pointer; 
+		letter-spacing: 0.075rem;
+		word-spacing: 0.025rem;}
+}

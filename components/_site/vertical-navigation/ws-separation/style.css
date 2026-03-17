@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/vertical-navigation/whitespace-separation/style.css */
+@layer reset, theme, layout, modules.whitespace-separation.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("whitespace-separation.css") layer(modules.whitespace-separation);
+@import url("utilities.css") layer(utilities);

@@ -1,0 +1,19 @@
+@layer modules.input-inset-shadow {
+
+	.input-inset-shadow .wrapper {}
+
+	.input-inset-shadow input[type="text"] {
+		width: 35ch; 
+		max-width: 350px;
+		height: 45px;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: 0 0 1px 1px var(--gray-lighter) inset;
+		outline: none; 
+		padding-inline: 20px;
+		background-color: var(--white); }
+
+	input[type="text"]:focus {
+		box-shadow: 0px 0.001rem 0.001rem 0.001rem var(--gray-light) inset;
+		border: 2px solid var(--gray-light); }
+}

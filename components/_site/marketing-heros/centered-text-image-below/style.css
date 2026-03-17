@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/marketing-heros/centered-text-image-below/style.css */
+@layer reset, theme, layout, modules.centered-text-image-below.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("centered-text-image-below.css") layer(modules.centered-text-image-below);
+@import url("utilities.css") layer(utilities);

@@ -1,0 +1,71 @@
+@layer modules.input-label-small-uppercase {
+
+	.input-label-small-uppercase {
+		.wrapper {
+			background-color: var(--gray-lightest); }
+
+		.input-wrapper {
+			position: relative;}
+		
+/*		.input-wrapper:focus-within .input-label::before {
+			color: var(--dark); }
+*/
+		.input-label {
+			position: absolute;
+			left: 1px;
+			top: -22px;
+			font-family: var(--font-family-label);
+			font-size: var(--font-size-label);
+			text-transform: uppercase;
+			color: var(--gray);
+			letter-spacing: 1.25px; }
+
+		input[type="text"] {
+			width: 350px; 
+			max-width: 350px;
+			height: 3.25rem;
+			border: 2px solid var(--gray-lighter);
+			border-radius: var(--size-radius-md);
+			outline: none; 
+			padding-inline: 20px;
+			background-color: var(--white);
+			transition: box-shadow var(--transition-slow) ease; }
+
+		input[type="text"]:focus {
+			box-shadow: 0px 1px 1px 0px var(--white);
+			border: 0; }
+
+	@scope {
+	
+		.wrapper {
+			background-color: var(--gray-lightest); }
+
+		.input-label-small-uppercase input[type="text"] {
+			width: 350px; 
+			max-width: 350px;
+			height: 3.25rem;
+			border: 2px solid var(--gray-lighter);
+			border-radius: var(--size-radius-md);
+			outline: none; 
+			padding-inline: 20px;
+			background-color: var(--white); }
+
+		.input-wrapper {
+			position: relative;}
+
+		.input-label {
+			position: absolute;
+			left: 1px;
+			top: -22px;
+			font-family: var(--font-family-label);
+			font-size: var(--font-size-label);
+			text-transform: uppercase;
+			letter-spacing: 1.25px; }
+
+		input[type="text"]:focus {
+			background-color: var(--light); 
+			border-color: var(--gray-darker); }
+	
+	
+	}
+}

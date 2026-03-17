@@ -1,0 +1,30 @@
+@layer modules.badge-gradient  {
+
+.badge-gradient {
+
+	.wrapper {}
+
+	.badge {
+		background: linear-gradient(to right, var(--gray-darkest), var(--gray-darker), var(--gray-dark));
+		color: var(--gray-lightest);
+		font-family: var(--font-family-badge);
+		font-size: var(--font-size-badge);
+		font-weight: 600;
+		padding-block: 0.5rem;
+		padding-inline: 0.75rem;
+		border-radius: var(--size-radius-md);
+		letter-spacing: var(--tracking-md); }
+
+@scope(.badge-gradient) {
+	.badge {
+		background: linear-gradient(to right, var(--gray-darkest), var(--gray-darker), var(--gray-dark));
+		color: var(--gray-lightest);
+		font-family: var(--font-family-badge);
+		font-size: var(--font-size-badge);
+		font-weight: 600;
+		padding-block: 0.5rem;
+		padding-inline: 0.75rem;
+		border-radius: var(--size-radius-md);
+		letter-spacing: var(--tracking-md); }}
+
+}

@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/pricing-cards/card-centered-single-tier/style.css */
+@layer reset, theme, layout, modules.card-centered-single-tier.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("card-centered-single-tier.css") layer(modules.card-centered-single-tier);
+@import url("utilities.css") layer(utilities);

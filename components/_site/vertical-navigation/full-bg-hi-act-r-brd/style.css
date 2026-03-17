@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/vertical-navigation/full-background-highlight-active-right-border/style.css */
+@layer reset, theme, layout, modules.full-background-highlight-active-right-border.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("full-background-highlight-active-right-border.css") layer(modules.full-background-highlight-active-right-border);
+@import url("utilities.css") layer(utilities);

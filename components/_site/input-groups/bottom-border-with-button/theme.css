@@ -1,0 +1,35 @@
+@import url("/main.css");
+@layer theme {
+	:root {
+		--black: var(--black);
+		--gray-darkest: var(--gray-200);
+		--gray-darker: var(--gray-300);
+		--gray-dark: var(--gray-400);
+		--gray: var(--gray-600);
+		--gray-light: var(--gray-700);
+		--gray-lighter: var(--gray-800);
+		--gray-lightest: var(--gray-900);
+		--white: var(--white);
+		
+		/* font family */
+		--font-family-caption: var(--font-serif);
+		--font-family-label: var(--font-sans);
+		--font-family-body: var(--font-serif);
+		--font-family-subheading: var(--font-sans);
+		--font-family-heading: var(--font-sans);
+
+		/* font size */
+		--font-size-caption: var(--size-font-12);
+		--font-size-label: var(--size-font-14);
+		--font-size-body: var(--size-font-16);
+		--font-size-subheading: var(--size-font-20);
+		--font-size-heading: var(--size-font-24);
+		
+		/* radius or transitions */
+		--radius-default: var(--size-radius-md);
+	}
+	
+	
+	body {
+		background-color: var(--light); }
+}

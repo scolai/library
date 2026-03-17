@@ -1,0 +1,48 @@
+@layer utilities {
+	:root {
+	
+	/* tight spacing */
+	--tracking-normal: var(--spacing-tight-normal);
+	--tracking-sm: var(--spacing-tight-sm);
+	--tracking-md: var(--spacing-tight-md);
+	--tracking-lg: var(--spacing-tight-lg);
+	--tracking-xl: var(--spacing-tight-xl);
+
+	/* normal spacing */
+	--gap-xs: var(--size-space-8);
+	--gap-sm: var(--size-space-16);
+	--gap-md: var(--size-space-32);
+	--gap-lg: var(--size-space-64);
+	
+	--padding-inline-default: var(--size-space-16);
+	--padding-block-default: var(--size-space-24);
+
+	/*  card default spacing  */
+	--card-max-width-sm: var(--size-space-384);
+	--card-max-width: var(--size-space-512);
+
+
+	/*  inline spacing  
+	--inline-spacing-tight-breadcrumbs:
+	--inline-spacing-
+	*/
+
+	/* shape & radius */
+	--radius-button: var(--size-radius-sm);
+	--radius-default: var(--size-radius-md);
+	--radius-card: var(--size-radius-lg);
+	--radius-circle: var(--size-radius-circle);
+	--radius-full: var(--size-radius-full);
+
+	/* layering z-index */
+	--z-default: var(--layer-base);
+	--z-dropdown: var(--layer-modal);
+	--z-tooltip: var(--layer-tooltip);
+
+	/* transitioning */
+	--transition-fast: var(--duration-fast);
+	--transition-default: var(--duration-medium);
+	--transition-slow: var(--duration-slow); 
+	
+} 		/* /:root */
+} 		/* /@layer */

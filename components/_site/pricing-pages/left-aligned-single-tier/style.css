@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/pricing-pages/left-aligned-single-tier/style.css */
+@layer reset, theme, layout, modules.left-aligned-single-tier.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("left-aligned-single-tier.css") layer(modules.left-aligned-single-tier);
+@import url("utilities.css") layer(utilities);

@@ -1,0 +1,45 @@
+@layer modules.faq {
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 20px;
+
+    .faq-details {
+        padding-inline: 20px;
+        width: 100%;
+        background-color: #888;
+        border: 3px solid #ddd;
+    }
+
+    .faq-details:open summary::after {
+        content: "\00D7"
+    }
+
+    .faq-summary {
+        color: #fff;
+        font-size: var(--font-size-heading);
+        font-family: var(--font-family-heading);
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .faq-summary::after {
+        content: "\002B"
+    }
+
+    .faq-body {
+        padding-block: 20px;
+        background-color: #eee;
+        color: #999;
+        font-size: var(--font-size-heading);
+        width: 100%;
+    }
+}
+}

@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/application layouts/side-bar-icons/style.css */
+@layer reset, theme, layout, modules.side-bar-icons.css, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("side-bar-icons.css") layer(modules.side-bar-icons);
+@import url("utilities.css") layer(utilities);
