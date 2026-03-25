@@ -1,0 +1,7 @@
+/* /home/blue/webace/library/components/sign_in_forms/form-simple-textarea/style.css */
+@layer reset, theme, layout, modules.form-simple-textarea, utilities;
+@import url("reset.css") layer(reset);
+@import url("theme.css") layer(theme);
+@import url("layout.css") layer(layout);
+@import url("form-simple-textarea.css") layer(modules.form-simple-textarea);
+@import url("utilities.css") layer(utilities);
