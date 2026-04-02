@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/badges/soft-bg-full-rnd/style.css */
-@layer reset, theme, layout, modules.badge-soft-bg-full-rnd.css , utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("badge-soft-bg-full-rnd.css") layer(modules.badge-soft-bg-full-rnd);
-@import url("utilities.css") layer(utilities);

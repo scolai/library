@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/marketing-heros/triple-feature-in-cards/style.css */
-@layer reset, theme, layout, modules.triple-feature-in-cards.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("triple-feature-in-cards.css") layer(modules.triple-feature-in-cards);
-@import url("utilities.css") layer(utilities);

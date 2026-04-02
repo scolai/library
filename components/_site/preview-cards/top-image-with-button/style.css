@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /top-image-with-button/style.css */
-@layer reset, theme, layout, modules.top-image-with-button.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("top-image-with-button.css") layer(modules.top-image-with-button);
-@import url("utilities.css") layer(utilities);

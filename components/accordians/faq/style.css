@@ -1,7 +1,0 @@
-@layer reset, theme, layout, modules.faq.css, utilities;
-
-@import url("/scripts/boilerplate/reset.css") layer(reset);
-@import url("/scripts/boilerplate/theme.css") layer(theme);
-@import url("/scripts/boilerplate/layout.css") layer(layout);
-@import url("faq.css") layer(modules.faq);
-@import url("/scripts/boilerplate/utilities.css") layer(utilities);

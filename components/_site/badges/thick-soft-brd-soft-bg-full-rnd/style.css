@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/badges/thick-soft-brd-soft-bg-full-rnd/style.css */
-@layer reset, theme, layout, modules.badge-thick-soft-brd-soft-bg-full-rnd, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("badge-thick-soft-brd-soft-bg-full-rnd.css") layer(modules.badge-thick-soft-brd-soft-bg-full-rnd);
-@import url("utilities.css") layer(utilities);

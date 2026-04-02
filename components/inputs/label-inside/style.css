@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/inputs/input-label-inside/style.css */
-@layer reset, theme, layout, modules.input-label-inside, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("input-label-inside.css") layer(modules.input-label-inside);
-@import url("utilities.css") layer(utilities);

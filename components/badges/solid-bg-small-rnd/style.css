@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/badges/solid-bg-small-rnd/style.css */
-@layer reset, theme, layout, modules.badge-solid-bg-small-rnd.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("badge-solid-bg-small-rnd.css") layer(modules.badge-solid-bg-small-rnd);
-@import url("utilities.css") layer(utilities);

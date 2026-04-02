@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/marketing-heros/newsletter-sign-up/style.css */
-@layer reset, theme, layout, modules.newsletter-sign-up.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("newsletter-sign-up.css") layer(modules.newsletter-sign-up);
-@import url("utilities.css") layer(utilities);

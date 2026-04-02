@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /overlapping-tabs-skewed-right-side/style.css */
-@layer reset, theme, layout, modules.hn-overlapping-tabs-skewed-right-side.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("hn-overlapping-tabs-skewed-right-side.css") layer(modules.hn-overlapping-tabs-skewed-right-side);
-@import url("utilities.css") layer(utilities);

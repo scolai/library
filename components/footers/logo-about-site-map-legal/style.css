@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/footers/logo-about-site-map-legal/style.css */
-@layer reset, theme, layout, modules.logo-about-site-map-legal.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("logo-about-site-map-legal.css") layer(modules.logo-about-site-map-legal);
-@import url("utilities.css") layer(utilities);

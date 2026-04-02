@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/marketing-sections/split-page/style.css */
-@layer reset, theme, layout, modules.split-page.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("split-page.css") layer(modules.split-page);
-@import url("utilities.css") layer(utilities);

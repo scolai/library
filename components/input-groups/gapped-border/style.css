@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/inputs/gapped-border/style.css */
-@layer reset, theme, layout, modules.input-gapped-border, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("input-gapped-border.css") layer(modules.input-gapped-border);
-@import url("utilities.css") layer(utilities);

@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/ ... /front-active-tab-colored-top-border/style.css */
-@layer reset, theme, layout, modules.hn-front-active-tab-colored-top-border.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("hn-front-active-tab-colored-top-border.css") layer(modules.hn-front-active-tab-colored-top-border);
-@import url("utilities.css") layer(utilities);

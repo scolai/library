@@ -1,8 +1,0 @@
-/* /home/blue/webace/library/components/sign_in_forms/full-page/style.css */
-@layer reset, theme, layout, modules.form-full-page, utilities;
-
-@import url("imports/reset.css") layer(reset);
-@import url("imports/theme.css") layer(theme);
-@import url("imports/layout.css") layer(layout);
-@import url("../form-full-page.css") layer(modules.form-full-page);
-@import url("imports/utilities.css") layer(utilities);

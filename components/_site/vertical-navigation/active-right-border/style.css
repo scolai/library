@@ -1,7 +1,0 @@
-/* /home/blue/webace/library/components/vertical-navigation/active-right-border/style.css */
-@layer reset, theme, layout, modules.active-right-border.css, utilities;
-@import url("reset.css") layer(reset);
-@import url("theme.css") layer(theme);
-@import url("layout.css") layer(layout);
-@import url("active-right-border.css") layer(modules.active-right-border);
-@import url("utilities.css") layer(utilities);
