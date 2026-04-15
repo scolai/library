@@ -18,11 +18,11 @@ components/buttons/icon-left
 components/buttons/icon-right
 components/inputs/small-rounded
 components/footers/site-map-about-icons-legal
-components/footers/site-map-about-field-legal
+components/footers/footer-field
 components/footers/footer-about-map
 components/footers/footer-centered-site-map
-components/footers/logo-field-site-map-legal
-components/footers/logo-navigation-icons-legal
+components/footers/footer-search
+components/footers/footer-nav-icons
 components/footers/footer-stacked
 components/horizontal-navigation/contained-light
 components/horizontal-navigation/contained-dark
