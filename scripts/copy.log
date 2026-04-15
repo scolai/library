@@ -332,10 +332,10 @@ Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/site-map-about-f
 Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/site-map-about-field-legal/reset.css
 Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/site-map-about-field-legal/utilities.css → ..//components/footers/site-map-about-field-legal/utilities.css.bak
 Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/site-map-about-field-legal/utilities.css
-Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/logo-about-site-map-legal/reset.css → ..//components/footers/logo-about-site-map-legal/reset.css.bak
-Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/logo-about-site-map-legal/reset.css
-Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/logo-about-site-map-legal/utilities.css → ..//components/footers/logo-about-site-map-legal/utilities.css.bak
-Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/logo-about-site-map-legal/utilities.css
+Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/footer-about-map/reset.css → ..//components/footers/footer-about-map/reset.css.bak
+Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/footer-about-map/reset.css
+Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/footer-about-map/utilities.css → ..//components/footers/footer-about-map/utilities.css.bak
+Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/footer-about-map/utilities.css
 Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/footer-centered-site-map/reset.css → ..//components/footers/footer-centered-site-map/reset.css.bak
 Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/footer-centered-site-map/reset.css
 Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/footer-centered-site-map/utilities.css → ..//components/footers/footer-centered-site-map/utilities.css.bak
@@ -348,10 +348,10 @@ Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/logo-navigation-
 Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/logo-navigation-icons-legal/reset.css
 Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/logo-navigation-icons-legal/utilities.css → ..//components/footers/logo-navigation-icons-legal/utilities.css.bak
 Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/logo-navigation-icons-legal/utilities.css
-Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/legal-stacked-navigation/reset.css → ..//components/footers/legal-stacked-navigation/reset.css.bak
-Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/legal-stacked-navigation/reset.css
-Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/legal-stacked-navigation/utilities.css → ..//components/footers/legal-stacked-navigation/utilities.css.bak
-Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/legal-stacked-navigation/utilities.css
+Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/footer-stacked/reset.css → ..//components/footers/footer-stacked/reset.css.bak
+Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/footer-stacked/reset.css
+Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/footers/footer-stacked/utilities.css → ..//components/footers/footer-stacked/utilities.css.bak
+Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/footer-stacked/utilities.css
 Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/horizontal-navigation/contained-light/reset.css → ..//components/horizontal-navigation/contained-light/reset.css.bak
 Wed Nov  5 14:06:06 EST 2025 - Copied boilerplate/reset.css → ..//components/horizontal-navigation/contained-light/reset.css
 Wed Nov  5 14:06:06 EST 2025 - Backed up ..//components/horizontal-navigation/contained-light/utilities.css → ..//components/horizontal-navigation/contained-light/utilities.css.bak
@@ -722,12 +722,12 @@ Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/site-map-about-f
 Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/theme.css → ..//components/footers/site-map-about-field-legal/theme.css
 Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/site-map-about-field-legal/utilities.css → ..//components/footers/site-map-about-field-legal/utilities.css.bak
 Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/site-map-about-field-legal/utilities.css
-Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/logo-about-site-map-legal/reset.css → ..//components/footers/logo-about-site-map-legal/reset.css.bak
-Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/logo-about-site-map-legal/reset.css
-Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/logo-about-site-map-legal/theme.css → ..//components/footers/logo-about-site-map-legal/theme.css.bak
-Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/theme.css → ..//components/footers/logo-about-site-map-legal/theme.css
-Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/logo-about-site-map-legal/utilities.css → ..//components/footers/logo-about-site-map-legal/utilities.css.bak
-Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/logo-about-site-map-legal/utilities.css
+Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-about-map/reset.css → ..//components/footers/footer-about-map/reset.css.bak
+Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/footer-about-map/reset.css
+Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-about-map/theme.css → ..//components/footers/footer-about-map/theme.css.bak
+Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/theme.css → ..//components/footers/footer-about-map/theme.css
+Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-about-map/utilities.css → ..//components/footers/footer-about-map/utilities.css.bak
+Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/footer-about-map/utilities.css
 Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-centered-site-map/reset.css → ..//components/footers/footer-centered-site-map/reset.css.bak
 Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/footer-centered-site-map/reset.css
 Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-centered-site-map/theme.css → ..//components/footers/footer-centered-site-map/theme.css.bak
@@ -746,12 +746,12 @@ Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/logo-navigation-
 Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/theme.css → ..//components/footers/logo-navigation-icons-legal/theme.css
 Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/logo-navigation-icons-legal/utilities.css → ..//components/footers/logo-navigation-icons-legal/utilities.css.bak
 Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/logo-navigation-icons-legal/utilities.css
-Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/legal-stacked-navigation/reset.css → ..//components/footers/legal-stacked-navigation/reset.css.bak
-Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/legal-stacked-navigation/reset.css
-Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/legal-stacked-navigation/theme.css → ..//components/footers/legal-stacked-navigation/theme.css.bak
-Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/theme.css → ..//components/footers/legal-stacked-navigation/theme.css
-Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/legal-stacked-navigation/utilities.css → ..//components/footers/legal-stacked-navigation/utilities.css.bak
-Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/legal-stacked-navigation/utilities.css
+Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-stacked/reset.css → ..//components/footers/footer-stacked/reset.css.bak
+Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/reset.css → ..//components/footers/footer-stacked/reset.css
+Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-stacked/theme.css → ..//components/footers/footer-stacked/theme.css.bak
+Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/theme.css → ..//components/footers/footer-stacked/theme.css
+Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/footers/footer-stacked/utilities.css → ..//components/footers/footer-stacked/utilities.css.bak
+Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/utilities.css → ..//components/footers/footer-stacked/utilities.css
 Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/horizontal-navigation/contained-light/reset.css → ..//components/horizontal-navigation/contained-light/reset.css.bak
 Wed Nov  5 15:18:14 EST 2025 - Copied boilerplate/reset.css → ..//components/horizontal-navigation/contained-light/reset.css
 Wed Nov  5 15:18:14 EST 2025 - Backed up ..//components/horizontal-navigation/contained-light/theme.css → ..//components/horizontal-navigation/contained-light/theme.css.bak
