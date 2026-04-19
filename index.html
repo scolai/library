@@ -1,110 +1,10 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en" target="_blank">
-<head>
-  <meta charset="UTF-8" target="_blank">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" target="_blank">
-  <title>Component Library</title>
-  <link rel="stylesheet" media="screen" href="normalizer.css" target="_blank">
 
-<style>
-:root {	
-  --value-scale: 12%;
-  --value0: hsl(0, 0%, calc(0 * var(--value-scale))); /* darkest */
-  --value1: hsl(0, 0%, calc(1 * var(--value-scale))); /* darker */
-  --value2: hsl(0, 0%, calc(2 * var(--value-scale))); /* dark */
-  --value3: hsl(0, 0%, calc(3 * var(--value-scale))); /* darkee */
-  --value4: hsl(0, 0%, calc(4 * var(--value-scale))); /* grey */
-  --value5: hsl(0, 0%, calc(5 * var(--value-scale))); /* lightgrey */
-  --value6: hsl(0, 0%, calc(6 * var(--value-scale))); /* lightergrey */
-  --value7: hsl(0, 0%, calc(7 * var(--value-scale))); /* light */
-  --value8: hsl(0, 0%, calc(8 * var(--value-scale))); /* lighter */
-  --value9: hsl(0, 0%, calc(9 * var(--value-scale))); } /* lightest */ 
 
-.wrapper {
-	width: 95vw;
-	margin-inline: auto;
-	padding-block: 5rem; }
-
-.main--library {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	row-gap: 5rem;
-	column-gap: 20px; }
-
-.column-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: start; }
-	
-.inputs-wrapper {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr); 
-	column-gap: 5px;
-	justify-content: flex-start;}
-
-h1 {
-	font-family: sans-serif;
-	font-size: 2.5rem;
-	font-weight: 500; 
-	letter-spacing: 0.125rem;
-	color: var(--value6); }
-
-h2 {
-	font-family: sans-serif;
-	font-size: 1rem;
-	font-weight: 400; 
-	color: var(--value9);
-	background-color: var(--value0);
-	padding-inline: 2rem;
-	padding-block: 0.5rem;
-	border-radius: 10px; }
-	
-.started {
-	background-color: lightgray;
-	color: blue;
-	font-weight: bold;
-	font-family: "Open Sans";
-	font-size: 1.1rem;}
-
-.completed {
-	background-color: gold;
-	color: purple;
-	font-weight: bold;
-	font-family: "Helvetica Neue";
-	font-size: 1.1rem;}
-
-p {
-	font-family: sans-serif;
-	font-size: 0.9rem; }
-
-a:link:any-link {
-	font-family: sans-serif;
-	font-size: 0.9rem;
-	font-weight: 600;
-	color: #000;
-	text-decoration: underline dotted var(--value3) 1px; }
-	
-ul { 
-	list-style-type: none; 
-	padding-inline-start: unset; 
-	margin-block: unset; 
-	margin-block-start: 5px; }
-
-li {
-	display: block;
-	padding-block: 10px; }
-
-</style>
-
-<body>
 	<div class="wrapper">
-		<header class="search-bar">
-			{% raw %}
-			{% include search-form.html %}
-			{% endraw %}
-		</header>
+
 		<main class="main--library">
 			<div class="column-wrapper">
 				<h2>Application layouts</h2>
@@ -118,6 +18,7 @@ li {
 					<li><a href="components/application-layouts/side-bar-only/index.html" target="_blank">Sidebar only</a></li>
 					<li><a href="components/application-layouts/three-cols-layout/index.html" target="_blank">Three-column layout</a></li>
 					<li><a href="components/application-layouts/vertical-nav-overlapping-horizontal/index.html" target="_blank">Vertical navigation overlapping horizontal navigation</a></li>
+					<li><a href="components/application-layouts/layout-001/index.html" target="_blank">Layout 001</a></li>
 				</ul>		
 			</div>
 			
@@ -443,5 +344,3 @@ li {
 
 		</library-main>
 	</library-wrapper>
-</body>
-</html>
