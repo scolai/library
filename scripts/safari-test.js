@@ -47,7 +47,7 @@ async function crawlSite(page, rootUrl) {
     urls.unshift(rootUrl); // ensure homepage is first
   }
 
-  await context.close();
+  await context.close();  
 
   for (const width of widths) {
     const context = await browser.newContext({
