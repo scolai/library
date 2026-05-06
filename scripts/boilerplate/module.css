@@ -1,12 +1,5 @@
-@layer modules.hn-bottom-border-raised-darker  {
-
 .hn-bottom-border-raised-darker {
 
-	/* make page white */
-	.wrapper { background-color: var(--white); }
-
-
-	/* display list of items as a centered column on small screens, aligned left */
 	.nav-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -61,5 +54,4 @@
 		color: var(--gray-dark); }
 
 
-}
 }
